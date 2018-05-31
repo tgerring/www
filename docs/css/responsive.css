@@ -95,7 +95,7 @@
 
 	/* Spotlight */
 	.inner_grid h3 {
-    	font-size: 8vw !important;
+    	font-size: 5vw !important;
     	font-weight: bolder !important;
 	}
 	.inner_grid p {
@@ -111,7 +111,7 @@
 	}
 
 	a.readMoreButton {
-	    font-size: 5vw !important;
+	    font-size: 3.5vw !important;
 	    padding: 3vw !important;
 	    border-radius: 2vw !important;
 	}
@@ -143,6 +143,31 @@
 	.carousel-caption.nothome h3 {
 	    font-size: 7vw !important;
 	    margin-top: 5vw;
+	}
+	.aboutleft h3 {
+	    display: none;
+	}
+	.aboutleft p.para1 {
+	    margin-bottom: 2em;
+	    font-size: 3.5vw;
+	    line-height: 4vw;
+	}
+	.col-md-6.aboutleft {
+	    margin-bottom: 5vw;
+	}
+	.aboutleft p {
+	    font-size: 3vw !important;
+	}
+	.carousel-caption.nothome.Aid h3, .carousel-caption.nothome.Energy h3 {
+	    margin-top: 0 !important;
+	}
+
+	.close span {
+	    padding: 5vw;
+	    font-size: 4vw;
+	}
+	.agileits-w3layouts-info p {
+	    font-size: 2vw;
 	}
 
 
