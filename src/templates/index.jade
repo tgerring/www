@@ -1,0 +1,31 @@
+extends layouts/main
+
+block title
+    title
+      | The Blochain Institute 
+
+block description
+  meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
+
+
+
+block content
+  - var nav = 'home';
+  - var bannerMsg = "Blockchain could change ";
+  - var bannerFocus = "Everything";
+  - var subtitle = "so we're teaching it for free";
+  - var home = 'home';
+  include includes/header
+  include includes/banner
+  include includes/services
+  include includes/testimonials
+  include includes/services-b
+  include includes/services-c
+  include includes/services_summary
+
+
+
+
+
+
+

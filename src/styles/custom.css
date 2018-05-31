@@ -1,0 +1,136 @@
+.services-top-grids {
+    top: 14.5em !important;
+}
+
+section.testimonials {
+    min-height: 20em;
+}
+
+section.services {
+    height: 40em;
+}
+
+img.nav_logo {
+    max-height: 4em;
+}
+.carousel-caption span {
+    color: #fc3f08 !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+    color: #1073aa !important;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link:hover{
+    color: #fc3f08 !important;
+}
+.ser_tp {
+    border-radius: 0.2em;
+     opacity: 0.8;
+}
+
+/* Set 'Current' Color for Nav */
+ul.home>li.home>a.nav-link,
+ul.news>li.news>a.nav-link,
+ul.contact>li.contact>a.nav-link,
+ul.industry>li.industry>a.nav-link{
+    color: #1073aa !important
+}
+
+.wthree-mid.edu {
+    padding-top: 8em;
+}
+
+.wthree-mid.edu {
+    background: url(../images/books.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid1 {
+    max-height: 524px !important;
+}
+
+.carousel-caption {
+	top: auto;
+}
+
+.carousel-item.active.nothome {
+    max-height: 14em;
+}
+
+.carousel-caption.nothome {
+    top: 3em;
+}
+a.readMoreButton {
+    text-transform: uppercase;
+    background: #e20a62;
+    border-color: #e20a62;
+}
+
+span.bannerSubtitle {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: white !important;
+    text-transform: capitalize;
+}
+.container.contactUs {
+    text-align: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.container.inside_services {
+    text-align: justify;
+}
+
+.left {
+    font-size: 5em;
+    left: 1.5vw;
+    position: absolute;
+    height: inherit;
+    padding-top: inherit;
+    z-index: 2;
+}
+
+.right {
+    font-size: 5em;
+    z-index: 2;    
+    left: 95vw;
+    position: absolute;
+    height: inherit;
+    padding-top: inherit;
+}
+
+button.navbar-toggler.navbar-toggler-right {
+     margin-top: 1.25em !important; 
+}
+
+a {
+    color: #023b54;
+}
+
+.modal-dialog {
+    max-width: 60% !important;
+}
+
+h4.modal-title {
+    color: black !important;
+}
+
+.carousel-caption {
+    left: 0%;
+    right: 0%;
+}
+
+
+.carousel-caption h3 {
+    text-transform: uppercase !important;
+    font-weight: bolder;
+}
+.row.wthree-services-bottom-grids {
+    margin-left: 10%;
+}
+
+

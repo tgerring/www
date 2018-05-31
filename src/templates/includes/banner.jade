@@ -1,0 +1,13 @@
+// /banner
+.banner
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    .carousel-inner(role='listbox')
+      .carousel-item.active(class="#{home}")
+        .carousel-caption(class="#{home} #{bannerFocus}")
+          h3
+            | #{bannerMsg} 
+            b
+              span #{bannerFocus}
+          span.bannerSubtitle 
+            | #{subtitle}
+// //banner
