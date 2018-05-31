@@ -132,5 +132,68 @@ h4.modal-title {
 .row.wthree-services-bottom-grids {
     margin-left: 10%;
 }
+.col-md-4.serv-grid1 {
+    background: url(../images/food_on_shelves.jpg) no-repeat 0px 0px !important;
+}
+
+/* Colors for 'Why Blockchain' */
+.innergrid1.independance{
+    border: 1px solid #ffdb06;
+}
+.innergrid1.independance:hover{
+    background: #ffdb06;
+    color: #000000;
+}
+
+.innergrid1.transparency{
+    border: 1px solid #1073aa;
+}
+.innergrid1.transparency:hover{
+    background: #1073aa;
+    color: #000000;
+}
+
+.innergrid1.decentralization{
+    border: 1px solid #06b7b2;
+}
+.innergrid1.decentralization:hover{
+    background: #06b7b2;
+    color: #000000;
+}
+
+.innergrid1.collaboration{
+    border: 1px solid #e20a62;
+}
+.innergrid1.collaboration:hover{
+    background: #e20a62;
+    color: #000000;
+}
+
+.innergrid1.verifiability{
+    border: 1px solid #fc3f0d;
+}
+.innergrid1.verifiability:hover{
+    background: #fc3f0d;
+    color: #000000;
+}
+
+.innergrid1.open{
+    border: 1px solid #0ad88e;
+}
+.innergrid1.open:hover{
+    background: #0ad88e;
+    color: #000000;
+}
+.innergrid1 p:hover {
+    color: inherit;
+}
+
+
+
+
+
+
+
+
 
 
