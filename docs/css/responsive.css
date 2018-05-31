@@ -1,9 +1,21 @@
 @media (max-width: 1000px) {
-	.carousel-caption h3 {
-    	font-size: 4em !important;
+
+	/* Nav */
+	button.navbar-toggler.navbar-toggler-right {
+	    margin-top: 0 !important;
 	}
+	span.navbar-toggler-icon {
+    	padding: 1.75em;
+    	margin-top: 0 !important;
+	}
+
+	/* Hero Image */
+	.carousel-item.active.home {
+    	height: 150vw;
+	}
+
 	.carousel-caption {
-    	top: 10em;
+    	top: 40vw;
 	}
 	.carousel-caption.nothome {
     	vertical-align: middle;
@@ -13,9 +25,59 @@
 	.carousel-caption.nothome.Finance, .carousel-caption.nothome.Energy, .carousel-caption.nothome.Aid {
     	top: 25%;
 	}
+
+	.carousel-caption h3 {
+    	font-size: 8em !important;
+	    letter-spacing: 2px;
+	    line-height: 1.4em;
+	    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.67) !important;
+	}
+
+	span.bannerSubtitle {
+	    font-size: 4em;
+	}
+
+	/* Services Sections */
+	h2.heading-agileinfo, h3.heading-agileinfo.why_us {
+    	font-size: 3.5em;
+    	margin-top: 1.5em;
+	}
+
+	p.margin {
+    	font-size: 4vw;
+    	line-height: 1.5em;
+    	margin-top: 1em;
+	}
+
 	.services-top-grids {
     	top: 15em !important;
 	}
+	
+	.grid1 h4 {
+    	font-size: 3.5em !important;
+	}
+	.grid1 p.justify {
+    	font-size: 4vw;
+	}
+	.services-top-grids .col-md-4 {
+    	min-height: 90vw;
+	}
+
+	/* WHY BLOCKCHAIN */
+	span.heading-agileinfo-span {
+	    font-size: 4vw;
+	}
+	.innergrid1 h3 {
+	    font-size: 5vw !important;
+	    line-height: 5vw !important;
+	}
+	.innergrid1 p {
+	    font-size: 4vw !important;
+	    line-height: 5vw !important;
+	    padding: 2.5vw !important;
+	}
+
+
 	.col-md-6 {
     	min-width: 100%;
 	}
@@ -30,12 +92,65 @@
 	.ser_tp {
 		max-width: 100% !important;
 	}
+
+	/* Spotlight */
+	.inner_grid h3 {
+    	font-size: 8vw !important;
+    	font-weight: bolder !important;
+	}
+	.inner_grid p {
+	    font-size: 3.5vw !important;
+	    line-height: 5vw !important;
+	    padding-bottom: 0.5vw !important;
+	}
+	.serv-grids .row .col-md-4 {
+	    min-height: 75vw !important; 
+	}
+	.inner_grid h3 {
+	    margin-top: 5vw;
+	}
+
+	a.readMoreButton {
+	    font-size: 5vw !important;
+	    padding: 3vw !important;
+	    border-radius: 2vw !important;
+	}
+
+	/* Institute Services Section */
+	.col-sm-2.services-bottom-icon {
+	    min-width: 100%;
+	}
+
+	.col-sm-10.services-bottom-info {
+	    text-align: center;
+	    min-width: 100%;
+	}
+
+	.col-sm-10.services-bottom-info h5 {
+	    font-size: 5vw !important;
+	}
+
+	.row.wthree-services-bottom-grids {
+	    margin-left: unset !important;
+	}
+
+	.services-bottom-info ul {
+	    font-size: 4vw;
+	    line-height: 6vw;
+	}
+
+	/* Industry (non-homepage) */
+	.carousel-caption.nothome h3 {
+	    font-size: 7vw !important;
+	    margin-top: 5vw;
+	}
+
+
 }	
 
 @media (max-width: 1100px) {
 	.col-md-4 {
 	    min-width: 100%;
-	    padding-bottom: 2.5em;
 	}
 	section.services {
 	    height: 100em !important;
