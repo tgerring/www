@@ -137,7 +137,7 @@ gulp.task('open', ['templates'], function() {
     var sourceFile = config.basePaths.src + '../README.md';
 
     gulp.src(sourceFile)
-        .pipe(isProduction ? gutil.noop() : plugins.open('', { url: uri }));
+        .pipe(isProduction ? gutil.noop() : plugins.open({uri: uri }));
 });
 
 // Define the default task as a sequence of the above tasks
