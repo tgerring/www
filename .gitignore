@@ -9,3 +9,9 @@ docs/*
 node_modules/*
 package-lock.json
 
+
+
+########################
+# os
+########################
+.DS_Store
