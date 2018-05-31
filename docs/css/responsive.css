@@ -1,0 +1,78 @@
+@media (max-width: 1000px) {
+	.carousel-caption h3 {
+    	font-size: 4em !important;
+	}
+	.carousel-caption {
+    	top: 10em;
+	}
+	.carousel-caption.nothome {
+    	vertical-align: middle;
+    	top: 0;
+
+	}	
+	.carousel-caption.nothome.Finance, .carousel-caption.nothome.Energy, .carousel-caption.nothome.Aid {
+    	top: 25%;
+	}
+	.services-top-grids {
+    	top: 15em !important;
+	}
+	.col-md-6 {
+    	min-width: 100%;
+	}
+	.testimonials {
+    	background: url(../images/20180523_fjs_BCI_012.jpg) no-repeat 0px -3000px  !important;
+	}
+	.carousel-item {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 22, 23, 0.2)), to(rgba(23, 22, 23, 0.5))), url(../images/glass.jpg) no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
+		background-size: cover  !important;
+	}
+	.ser_tp {
+		max-width: 100% !important;
+	}
+}	
+
+@media (max-width: 1100px) {
+	.col-md-4 {
+	    min-width: 100%;
+	    padding-bottom: 2.5em;
+	}
+	section.services {
+	    height: 100em !important;
+	}
+	.col-md-8.service_right_grid {
+    	min-width: 100%;
+	}
+
+	.heading-agileinfo span {
+    	font-size: 25px !important;
+	}
+	.services-top-grids {
+	    top: 30em !important;
+	}
+	.carousel-caption.nothome.Finance {
+    	top: 0em !important;
+	}
+	.testimonials {
+    	background: url(../images/20180523_fjs_BCI_012.jpg) no-repeat 0px -3000px  !important;
+	}
+	.carousel-item {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 22, 23, 0.2)), to(rgba(23, 22, 23, 0.5))), url(../images/glass.jpg) no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
+		background-size: cover !important;
+	}
+	.ser_tp {
+		max-width: 100% !important;
+	}
+	.modal-dialog {
+    	max-width: 85% !important;
+	}
+
+
+}
+
+button.navbar-toggler.navbar-toggler-right {
+    text-align: center;
+    margin-top: 0.55em;
+    background-color: white;
+}
