@@ -20,11 +20,11 @@ If you already had nodejs installed and need it updated, make sure to `sudo apt-
 Install node from http://nodejs.org/download/ and open the node command prompt.
 
 ## Installation
-Assuming nodejs/npm is correctly installed, the next step is to install gulp with and then all the project dependencies:
+Assuming nodejs/npm is correctly installed, the next step is to install gulp with and then all the project dependencies, along with yarn.
 
 ```
-sudo npm -g install gulp
-npm install
+sudo npm -g install gulp yarn
+yarn
 ```
 
 ## Development
