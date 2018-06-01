@@ -180,7 +180,35 @@
 	    line-height: 4vw !important;
 	}
 
-
+	/* Footer */
+	ul.links {
+	    text-align: center;
+	}
+	.footer-title {
+	    text-align: center;
+	}
+	ul.links li a {
+	    font-size: 3vw !important;
+	}
+	.footer p {
+	    font-size: 3vw !important;
+	}
+	.footer input[type="email"] {
+	    font-size: 3vw !important;
+	}
+	.footer i.fa.fa-envelope {
+	    font-size: 5vw !important;
+	}
+	ul.social_section_1info a {
+	    font-size: 5vw !important;
+	}
+	.footer-text {
+	    text-align: center;
+	}
+	.footer_w3layouts_section_1its h3 {
+	    font-size: 4vw !important;
+	    margin-top: 2vw !important;
+	}
 }	
 
 @media (max-width: 1100px) {
