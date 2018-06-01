@@ -132,9 +132,6 @@ h4.modal-title {
 .row.wthree-services-bottom-grids {
     margin-left: 10%;
 }
-/*.col-md-4.serv-grid1 {
-    background: url(../images/food_on_shelves.jpg) no-repeat 0px 0px !important;
-}*/
 
 /* Colors for 'Why Blockchain' */
 .innergrid1.independance{
@@ -190,7 +187,7 @@ h4.modal-title {
 
 
 
-
+/* Mobile Nav Bar */
 
 .show>.dropdown-menu {
     display: inline-table !important;
@@ -201,8 +198,19 @@ h4.modal-title {
     font-size: 5vw !important;
 }
 
-
-
+/* Case Study Images */
+.serv-grid1 {
+    background: url(../images/food_on_shelves.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.serv-grid2 {
+    background: url(../images/BI_DigitalMedia.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.serv-grid3 {
+    background: url(../images/BI_Automotive.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
 
 /*p.margin {
     margin-top: 1.5ex;

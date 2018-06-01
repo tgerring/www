@@ -489,10 +489,10 @@ nav.navbar.navbar-toggleable-md.navbar-light {
 }
 /*--/slider--*/
 .carousel-item {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat  0px -200px;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat  0px -200px;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat  0px -200px;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat  0px -200px;
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat  0px -200px;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat  0px -200px;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat  0px -200px;
+	background: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat  0px -200px;
 	background-size: cover;
 }
 .carousel-item.item2 {
@@ -1155,7 +1155,7 @@ ul.links li a:hover{
 }
 /*--//footer--*/
 .banner1 {
-    background: url(../images/glass.jpg) no-repeat 0px 0px;
+    background: url(../images/Blueprint.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

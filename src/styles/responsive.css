@@ -85,10 +85,10 @@
     	background: url(../images/20180523_fjs_BCI_012.jpg) no-repeat 0px -3000px  !important;
 	}
 	.carousel-item {
-		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
-		background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
-		background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
-		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
+		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
 		background-size: cover  !important;
 	}
 	.ser_tp {
@@ -172,7 +172,7 @@
 	.agileits-w3layouts-info p {
 	    font-size: 2vw;
 	}
-	
+
 	/* Model Popup */
 	h4.modal-title {
 	    font-size: 6vw !important;
@@ -209,10 +209,10 @@
     	background: url(../images/20180523_fjs_BCI_012.jpg) no-repeat 0px -3000px  !important;
 	}
 	.carousel-item {
-		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
-		background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
-		background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
-		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/glass.jpg) no-repeat !important;
+		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: -moz-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: -ms-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
 		background-size: cover !important;
 	}
 	.ser_tp {
