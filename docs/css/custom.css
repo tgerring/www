@@ -219,3 +219,9 @@ h4.modal-title {
 .justify {
     text-align: justify;
 }
+
+.navbar-light .navbar-toggler {
+    border-color: none !important;
+    background: none !important;
+}
+

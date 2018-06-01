@@ -82,13 +82,13 @@
     	min-width: 100%;
 	}
 	.testimonials {
-    	background: url(../images/20180523_fjs_BCI_012.jpg) no-repeat 0px -3000px  !important;
+    	background: url(../images/second.jpg);
 	}
 	.carousel-item {
-		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
-		background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
-		background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
-		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/main.jpg) no-repeat !important;
+		background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/main.jpg) no-repeat !important;
+		background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/main.jpg) no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/main.jpg) no-repeat !important;
 		background-size: cover  !important;
 	}
 	.ser_tp {
@@ -233,14 +233,12 @@
 	.carousel-caption.nothome.Finance {
     	top: 0em !important;
 	}
-	.testimonials {
-    	background: url(../images/20180523_fjs_BCI_012.jpg) no-repeat 0px -3000px  !important;
-	}
+
 	.carousel-item {
-		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
-		background: -moz-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
-		background: -ms-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
-		background: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/Blueprint.jpg) no-repeat !important;
+		background: -webkit-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/main.jpg) no-repeat !important;
+		background: -moz-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/main.jpg) no-repeat !important;
+		background: -ms-linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/main.jpg) no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/main.jpg) no-repeat !important;
 		background-size: cover !important;
 	}
 	.ser_tp {
