@@ -158,9 +158,10 @@
 	.aboutleft p {
 	    font-size: 3vw !important;
 	}
-	.carousel-caption.nothome.Aid h3, .carousel-caption.nothome.Energy h3 {
+	.carousel-caption.nothome.Philanthropy h3, .carousel-caption.nothome.Energy h3 {
 	    margin-top: 0 !important;
 	}
+
 
 	.close span {
 	    padding: 5vw;
