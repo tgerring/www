@@ -1,8 +1,30 @@
 header
+  #sideNav.sidenav
+      ul.navbar-nav(class="#{nav}")
+        li.nav-item(class="home")
+          a.nav-link.mobi(href='/')
+            | Home 
+        hr
+        li.nav-item.dropdown(class="industries")
+          a#navbarDropdown.nav-link.dropdown-toggle.mobi(href='#', role='button', data-toggle='dropdown', aria-haspopup='true')
+            | Impact
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item.mobi(href='education') Education
+              .dropdown-divider
+              a.dropdown-item.mobi(href='energy') Energy
+              .dropdown-divider
+              a.dropdown-item.mobi(href='finance') Finance
+              .dropdown-divider
+              a.dropdown-item.mobi(href='healthcare') Healthcare
+              .dropdown-divider
+              a.dropdown-item.mobi(href='aid') Philanthropy  
+        hr            
+        li.nav-item(class="contact")
+          a.nav-link.mobi(href='contact') Contact
   .header-bar
     .container
       nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
-        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        #mobiNav.button.navbar-toggler.navbar-toggler-right(type='button', onclick='toggleNav()', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation') 
           span.navbar-toggler-icon
         .hedder-up
           div.nav_logo_container

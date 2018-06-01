@@ -192,7 +192,14 @@ h4.modal-title {
 
 
 
+.show>.dropdown-menu {
+    display: inline-table !important;
+    width: 100%;
+}
 
+.mobi {
+    font-size: 5vw !important;
+}
 
 
 

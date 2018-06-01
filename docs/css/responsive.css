@@ -170,6 +170,15 @@
 	.agileits-w3layouts-info p {
 	    font-size: 2vw;
 	}
+	
+	/* Model Popup */
+	h4.modal-title {
+	    font-size: 6vw !important;
+	}
+	.agileits-w3layouts-info p {
+	    font-size: 3vw !important;
+	    line-height: 4vw !important;
+	}
 
 
 }	

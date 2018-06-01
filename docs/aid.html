@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
   <title>Philanthropy | Blockchain Institute</title>
-  <meta name="description" content="Information about distributed ledger technology and how it will impact your life."><!-- inject:css --><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/fontawesome-all.css"><link rel="stylesheet" href="css/swipebox.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/xx.css"><!-- endinject -->
+  <meta name="description" content="Information about distributed ledger technology and how it will impact your life."><!-- inject:css --><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/fontawesome-all.css"><link rel="stylesheet" href="css/swipebox.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/sideNav.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/xx.css"><!-- endinject -->
   <!--if lt IE 9script(src='js/html5.js')
   -->
   <body>
     <header>
+      <div id="sideNav" class="sidenav">
+        <ul class="navbar-nav industry">
+          <li class="nav-item home"><a href="/" class="nav-link mobi">Home </a></li>
+          <hr>
+          <li class="nav-item dropdown industries"><a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" class="nav-link dropdown-toggle mobi">Impact
+              <div aria-labelledby="navbarDropdown" class="dropdown-menu"><a href="education" class="dropdown-item mobi">Education</a>
+                <div class="dropdown-divider"></div><a href="energy" class="dropdown-item mobi">Energy</a>
+                <div class="dropdown-divider"></div><a href="finance" class="dropdown-item mobi">Finance</a>
+                <div class="dropdown-divider"></div><a href="healthcare" class="dropdown-item mobi">Healthcare</a>
+                <div class="dropdown-divider"></div><a href="aid" class="dropdown-item mobi">Philanthropy  </a>
+              </div></a></li>
+          <hr>
+          <li class="nav-item contact"><a href="contact" class="nav-link mobi">Contact</a></li>
+        </ul>
+      </div>
       <div class="header-bar">
         <div class="container">
           <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="navbar-toggler-icon"></span></button>
+            <div id="mobiNav" type="button" onclick="toggleNav()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="button navbar-toggler navbar-toggler-right"> <span class="navbar-toggler-icon"></span></div>
             <div class="hedder-up">
               <div class="nav_logo_container"><a href="/" class="nav-link"><img src="images/Logo-Color.png" alt="The Blockchain Institute" class="nav_logo"></a></div>
             </div>
@@ -149,7 +164,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <!-- Load JavaScript--><!-- inject:js --><script src="js/tether.min.js"></script><script src="js/jquery-2.2.3.min.js"></script><script src="js/jquery.flexisel.js"></script><script src="js/header-scroller.js"></script><script src="js/move-top.js"></script><script src="js/easing.js"></script><script src="js/bootstrap.min.js"></script><script src="js/main.js"></script><script src="js/footer-scroller.js"></script><script src="js/jquery.swipebox.min.js"></script><script src="js/scroller.js"></script><!-- endinject -->
+    <!-- Load JavaScript--><!-- inject:js --><script src="js/tether.min.js"></script><script src="js/jquery-2.2.3.min.js"></script><script src="js/jquery.flexisel.js"></script><script src="js/header-scroller.js"></script><script src="js/move-top.js"></script><script src="js/easing.js"></script><script src="js/bootstrap.min.js"></script><script src="js/main.js"></script><script src="js/sideNav.js"></script><script src="js/footer-scroller.js"></script><script src="js/jquery.swipebox.min.js"></script><script src="js/scroller.js"></script><!-- endinject -->
     <!-- modal-->
     <div id="automotive" tabindex="-1" role="dialog" class="modal about-modal fade">
       <div role="document" class="modal-dialog">

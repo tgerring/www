@@ -92,7 +92,7 @@ module.exports = {
     'easing.js',
     'bootstrap.min.js',
     'main.js',
-
+    'sideNav.js'
  
   ],
 
@@ -102,6 +102,7 @@ module.exports = {
     'style',
     'swipebox.css',
     'custom.css',
-    'responsive.css'
+    'responsive.css',
+    'sideNav.css'
   ]
 };
