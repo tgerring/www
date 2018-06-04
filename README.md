@@ -1,5 +1,5 @@
 
-localearn
+The Blockchain Institute Website
 =================
 
 ## Setup (one-time)
