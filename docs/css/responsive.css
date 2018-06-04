@@ -233,8 +233,8 @@
 	}
 
 	.carousel-item {
-		background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 22, 23, 0.6)), to(rgba(23, 22, 23, 0.6))), url(../images/main.jpg) no-repeat no-repeat -300px -10px !important;
-		background: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/main.jpg) no-repeat no-repeat -300px -10px !important;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 22, 23, 0.6)), to(rgba(23, 22, 23, 0.6))), url(../images/main.jpg) no-repeat no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/main.jpg) no-repeat no-repeat !important;
 		background-size: cover !important;
 	}
 	.ser_tp {
