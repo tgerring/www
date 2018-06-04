@@ -1,5 +1,5 @@
 
-The Blockchain Institute Website
+The Blockchain Institute - Website Compiler
 =================
 
 ## Setup (one-time)
