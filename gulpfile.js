@@ -89,7 +89,7 @@ gulp.task('scripts', function() {
 
 gulp.task('images', function() {
     return gulp.src(config.appFiles.images, { cwd: config.typePaths.images.src })
-        .pipe(isProduction ? plugins.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }) : gutil.noop())
+        .pipe(isProduction ? plugins.imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }) : gutil.noop())
         .pipe(plugins.size({ title: 'imagemin', showFiles: false }))
         .pipe(isProduction ? gutil.noop() : plugins.connect.reload())
         .pipe(gulp.dest(config.typePaths.images.dest));
