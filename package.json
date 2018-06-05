@@ -35,6 +35,10 @@
     "tiny-lr": "1.1.1"
   },
   "dependencies": {
+    "imagemin-gifsicle": "^5.2.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^6.0.0",
     "jshint": "^2.9.5",
     "yarn-upgrade-all": "^0.3.0"
   },
