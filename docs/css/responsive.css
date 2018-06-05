@@ -11,11 +11,11 @@
 
 	/* Hero Image */
 	.carousel-item.active.home {
-    	height: 150vw;
+    	height: 100vh;
 	}
 
 	.carousel-caption {
-    	top: 40vw;
+    	top: 30vh;
 	}
 	.carousel-caption.nothome {
     	vertical-align: middle;
