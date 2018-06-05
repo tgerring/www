@@ -14,7 +14,7 @@ img.nav_logo {
     max-height: 4em;
 }
 .carousel-caption span {
-    color: #fc3f08 !important;
+    color: #09d68e !important;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
     color: #1073aa !important;
@@ -225,3 +225,32 @@ h4.modal-title {
     background: none !important;
 }
 
+h3.heading-agileinfo.why_us {
+    color: #1073aa !important;
+}
+
+.services-bottom-info h5 {
+    color: black !important;
+}
+
+.centered_Grid {
+    height: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+h3.heading-agileinfo.why_us {
+    margin-bottom: 3vh;
+}
+h2.heading-agileinfo {
+    margin-bottom: 3vh !important;
+}
+
+.services-1, .special-w3l, section.services {
+    padding-top: 3vh !important;
+
+}
+
+.special-w3l .container h3.heading-agileinfo.why_us {
+    margin-bottom: 0;
+}
