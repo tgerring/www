@@ -11,26 +11,6 @@ section.mail
       .clear
     .row.agileits_mail_grids
       .col-md-7.agileits_mail_grid_left
-        .sendgrid-subscription-widget(data-token='uBhSogHh5frxK3A%2FzIdM6hwAZH1YNoWg21TOHQsaOPL%2FGzsYsarbdPFcRITlHfgsL9eAVoYjy3wAR%2B18WtWyQw%3D%3D')
-        script.
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://s3.amazonaws.com/subscription-cdn/0.2/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'sendgrid-subscription-widget-js');
-        pre#events.code-block.
-        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
-        script.
-          window.jQuery || document.write('<script src="../js/jquery-1.10.1.min.js"><\\/script>')
-        script.
-          // for implementations without console, I'm looking at you IE
-          if (!window.console) console = {log: function() {}};
-          var events = "ready sent error success";
-          $.each(events.split(" "), function (i, type){
-          console.log("adding listener for event: " + type);
-          // We use the old school binding rather than jQuery, because the widget code executes and broadcasts ready before $(document).ready() fires
-          document.getElementsByClassName("sendgrid-subscription-widget")[0].addEventListener(type, function (e) {
-          console.log(e);
-          $("#events code").append(e.type + "\\n");
-          });
-          });
-
         form(action='#', method='post')
           input(type='text', name='Name', placeholder='Name...', required='')
           input(type='email', name='Email', placeholder='Email...', required='')

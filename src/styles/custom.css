@@ -181,8 +181,8 @@ h4.modal-title {
     background: #0ad88e;
     color: #000000;
 }
-.innergrid1 p:hover {
-    color: inherit;
+.innergrid1 p {
+    color: inherit !important;
 }
 
 
@@ -225,8 +225,8 @@ h4.modal-title {
     background: none !important;
 }
 
-h3.heading-agileinfo.why_us {
-    color: #1073aa !important;
+h3.heading-agileinfo.why_us, h2.heading-agileinfo {
+    color: #023b54 !important;
 }
 
 .services-bottom-info h5 {
@@ -259,7 +259,27 @@ h2.heading-agileinfo {
  background: url(../images/glass.jpg) -40px -2100px !important;
 }
 
-
+.teal {
+    color: #06b7b2 !important;
+}
+.magenta {
+    color: #e20a62 !important;
+}
+.yellow {
+    color: #ffdb06 !important;
+}
+.lightBlue {
+    color: #1073aa !important;
+}
+.orange {
+    color: #fc3f0d !important;
+}
+.green {
+    color: #2fd151 !important;
+}
+.lightGreen {
+    color: #0ad88e !important;
+}
 
 
 
