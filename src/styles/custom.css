@@ -281,6 +281,45 @@ h2.heading-agileinfo {
     color: #0ad88e !important;
 }
 
+form#mc-embedded-subscribe-form {
+    color: #808080;
+    font-size: 14px;
+    line-height: 1.8em;
+    letter-spacing: 0.5px;
+}
 
+input#mc-embedded-subscribe {
+    background: none;
+    color: inherit;
+    display: inline-table;
+    border: none;
+    font-size: inherit;
+}
+input#mce-EMAIL {
+    background: #FFFFFF;
+    color: black;
+    max-width: 75%;
+}
+div#mce-success-response {
+    color: white;
+    font-size: inherit;
+    padding: 1vh;
+}
+div#mce-error-response {
+    font-size: 1em;
+    padding: 1vh;
+
+}
+
+.mce_inline_error {
+    font-size: inherit;
+    padding: 1vh;
+}
+.mc-field-group {
+    text-align: left;
+}
+#mc_embed_signup div.mce_inline_error {
+    margin: 0 !important;
+}
 
 

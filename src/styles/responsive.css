@@ -211,6 +211,25 @@
 	    font-size: 4vw !important;
 	    margin-top: 2vw !important;
 	}
+
+	input#mc-embedded-subscribe {
+	    font-size: 2em;
+        max-width: 20%;
+	}
+	div#mce-success-response {
+	    font-size: 2em;
+	    padding: 1em;
+	    line-height: 1.5em;
+	}
+	div#mce-error-response {
+		font-size: 2em;
+	}
+
+	.mce_inline_error {
+	    font-size: 2em;
+	    padding: 1em;
+	}
+
 }	
 
 @media (max-width: 1100px) {

@@ -92,8 +92,7 @@ module.exports = {
     'easing.js',
     'bootstrap.min.js',
     'main.js',
-    'sideNav.js',
-    'mailer.js'
+    'sideNav.js'
  
   ],
 

@@ -1,11 +1,11 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn init
+  /usr/local/bin/node /usr/local/bin/yarn add @sendgrid/mail
 
 PATH: 
   /Users/alexandermorris/Desktop/Google-Cloud-Install/google-cloud-sdk/bin/:/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/alexandermorris/go-ethereum/build/bin
 
 Yarn version: 
-  1.6.0
+  1.7.0
 
 Node version: 
   10.1.0
@@ -14,25 +14,15 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:129516:13)
-      at Interface.emit (events.js:182:13)
-      at Interface._ttyWrite (readline.js:778:16)
-      at ReadStream.onkeypress (readline.js:163:10)
-      at ReadStream.emit (events.js:182:13)
-      at emitKeys (internal/readline.js:422:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1014:36)
-      at ReadStream.emit (events.js:182:13)
-      at addChunk (_stream_readable.js:277:12)
+  Error: EACCES: permission denied, unlink '/Users/alexandermorris/Desktop/Blockchain Institute/Website/www/node_modules/.yarn-integrity'
 
 npm manifest: 
   {
-    "name": "edu-blochain-wtf",
+    "name": "blockchain-institute",
     "version": "0.1.0",
-    "description": "Blockchain.wtf Education Portal",
-    "author": "Blockchain WTF",
-    "repository": "https://github.com/BlockchainInstituteChi/learn",
+    "description": "The Blockchain Institute",
+    "author": "Alex Morris",
+    "repository": "https://github.com/BlockchainInstituteChi/BlockchainInstituteChi.github.io",
     "devDependencies": {
       "event-stream": "^3.1.4",
       "gulp": "^3.9.1",
@@ -64,6 +54,10 @@ npm manifest:
       "tiny-lr": "1.1.1"
     },
     "dependencies": {
+      "imagemin-gifsicle": "^5.2.0",
+      "imagemin-jpegtran": "^5.0.2",
+      "imagemin-optipng": "^5.2.1",
+      "imagemin-svgo": "^6.0.0",
       "jshint": "^2.9.5",
       "yarn-upgrade-all": "^0.3.0"
     },
