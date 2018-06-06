@@ -35,7 +35,7 @@ yarn
 
 ## Development
 
-To use the default dev task, which launches a local server on SERVER_PORT for preview, run gulp:
+To use the default dev task, which launches a local server on 1337 for preview, run gulp:
 
 ```
 gulp
