@@ -55,7 +55,7 @@ angular.module('mailManager', ['vcRecaptcha'])
         				"errorMessage":"hidden"
         			} 
         		} else {
-        			$scope.status = "There was an issue submitting your form. Please refresh the page and try again. ";        			
+        			$scope.status = "Contact us form temporarily disabled. Please feel free to sign up for our mailing list below.";        			
         			$scope.display = {
         				"contactForm":"hidden",
         				"successMessage":"hidden",
