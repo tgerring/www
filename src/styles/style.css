@@ -2399,6 +2399,15 @@ h3.heading-agileinfo.why_us {
 	display: none !important;
 }
 
+.boldItalic {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.externaLink {
+	color: #fc3f0d !important;
+}
+
 
 /*--//responsive--*/
 
