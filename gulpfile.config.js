@@ -92,7 +92,11 @@ module.exports = {
     'easing.js',
     'bootstrap.min.js',
     'main.js',
-    'sideNav.js'
+    'sideNav.js',
+    'angular.js',
+    'recaptcha.js',
+    'rawgit.js',
+    'mailCtrl.js'
  
   ],
 

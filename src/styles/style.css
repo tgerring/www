@@ -2395,6 +2395,9 @@ h3.heading-agileinfo.why_us {
     color: #fc3f0d;
 }
 
+.hidden, .successMessage, .errorMessage {
+	display: none !important;
+}
 
 
 /*--//responsive--*/

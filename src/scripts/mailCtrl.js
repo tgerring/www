@@ -8,7 +8,13 @@ angular.module('mailManager', ['vcRecaptcha'])
 	$scope.sendMail = function () {
 
 	};
-
+	$scope.init = function () {
+		$scope.display = {
+        				"contactForm":"",
+        				"successMessage":"hidden",
+        				"errorMessage":"hidden"
+        			};
+	};
 
   // Recaptcha Logic
     $scope.setResponse = function (response) {
@@ -31,6 +37,7 @@ angular.module('mailManager', ['vcRecaptcha'])
 		var payload = {
 			"name":$scope.name,
 			"email":$scope.email,
+			"phone":$scope.phone,
 			"comment":$scope.comment
 
 		};
@@ -40,6 +47,21 @@ angular.module('mailManager', ['vcRecaptcha'])
 			console.log('payload was good - hitting server');
 			$scope.checkCaptcha(payload, function(result) {
         		console.log('server response', result);
+    			$scope.status = "Form submitted successfully. A member of our team will reach out soon!";
+        		if(result) {
+        			$scope.display = {
+        				"contactForm":"hidden",
+        				"successMessage":"",
+        				"errorMessage":"hidden"
+        			} 
+        		} else {
+        			$scope.status = "There was an issue submitting your form. Please refresh the page and try again. ";        			
+        			$scope.display = {
+        				"contactForm":"hidden",
+        				"successMessage":"hidden",
+        				"errorMessage":""
+        			} 
+        		}
         	})
 		} else {
 			console.log(payload);
@@ -78,6 +100,9 @@ angular.module('mailManager', ['vcRecaptcha'])
 	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	    return re.test(String(email).toLowerCase());
 	}
+
+	
+	$scope.init();
 
 
 
