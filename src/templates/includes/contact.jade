@@ -1,5 +1,5 @@
 // contact
-section.mail
+section.mail(ng-app='mailManager')
   .container.contactUs
     h2.heading-agileinfo.why_us
       | Contact
@@ -10,13 +10,14 @@ section.mail
       br
       .clear
     .row.agileits_mail_grids
-      .col-md-7.agileits_mail_grid_left
-        form(action='#', method='post')
-          input(type='text', name='Name', placeholder='Name...', required='')
-          input(type='email', name='Email', placeholder='Email...', required='')
-          input(type='text', name='Phone', placeholder='Phone...', required='')
-          textarea(placeholder='Message...', name='Message')
-          input(type='submit', value='Send message')
+      .col-md-7.agileits_mail_grid_left(ng-controller='mailCtrl')
+        form(ng-submit='submit()')
+          input(type='text', name='Name', ng-model='name', placeholder='Name...', required='')
+          input(type='email', name='Email', ng-model='email', placeholder='Email...', required='')
+          input(type='text', name='Phone', ng-model='comment' placeholder='Phone...', required='')
+          textarea(placeholder='Message...', ng-model='comment', name='Message')
+          input(type='submit', value='Send message' )
+          div(vc-recaptcha='', theme="'light'", key='key', on-create='setWidgetId(widgetId)', on-success='setResponse(response)', on-expire='cbExpiration()')            
       .col-md-5.agileits_mail_grid_right
         .agile-map
           iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.5586100155974!2d-87.66023604874975!3d41.96681487911324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3d2cca04c9f%3A0xcb427cba87fb1934!2s4649+North+Broadway%2C+Chicago%2C+IL+60640!5e0!3m2!1sen!2sus!4v1527783194863', allowfullscreen='')
