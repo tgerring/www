@@ -2,7 +2,7 @@ console.log('loaded ');
 
 angular.module('mailManager', ['vcRecaptcha'])
 .controller('mailCtrl',[ '$http', '$scope', '$window', function( $http, $scope, $window ){
-	$scope.server = 'http://54.88.65.90:3005'; // do not include trailing '/'
+	$scope.server = 'https://enigmatic-castle-81290.herokuapp.com'; // do not include trailing '/'
 	$scope.key = "6Lef510UAAAAAHytDRJTVDGAUA_aMPaAnDDCkxV_";
 
 	$scope.sendMail = function () {
