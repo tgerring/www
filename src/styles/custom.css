@@ -293,6 +293,7 @@ input#mc-embedded-subscribe {
     color: inherit;
     display: inline-table;
     border: none;
+    max-width: 25%;
     font-size: inherit;
 }
 input#mce-EMAIL {
@@ -322,4 +323,14 @@ div#mce-error-response {
     margin: 0 !important;
 }
 
+.col-sm-2.services-bottom-icon {
+    right: 10%;
+}
+
+@media (max-width: 1000px) {
+    .col-sm-2.services-bottom-icon {
+        min-width: 100%;
+        right: 0 !important;
+    }
+}
 

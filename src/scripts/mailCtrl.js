@@ -5,16 +5,18 @@ angular.module('mailManager', ['vcRecaptcha'])
 	$scope.server = 'https://enigmatic-castle-81290.herokuapp.com'; // do not include trailing '/'
 	$scope.key = "6Lef510UAAAAAHytDRJTVDGAUA_aMPaAnDDCkxV_";
 
-	$scope.sendMail = function () {
-
-	};
 	$scope.init = function () {
+		$scope.status = "";
 		$scope.display = {
         				"contactForm":"",
         				"successMessage":"hidden",
         				"errorMessage":"hidden"
         			};
-	};
+		};
+
+	$scope.init();
+
+
 
   // Recaptcha Logic
     $scope.setResponse = function (response) {
@@ -102,7 +104,7 @@ angular.module('mailManager', ['vcRecaptcha'])
 	}
 
 	
-	$scope.init();
+
 
 
 

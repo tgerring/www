@@ -1955,7 +1955,6 @@ li.nav-item {
     margin-top: 5px;
     outline: none;
     margin-right: 0px;
-	z-index: 9999;
 	cursor: pointer;
     border-radius: 6px;
 	transition: 0.5s all;
