@@ -1,4 +1,4 @@
-console.log('loaded ');
+// console.log('loaded ');
 
 angular.module('mailManager', ['vcRecaptcha'])
 .controller('mailCtrl',[ '$http', '$scope', '$window', function( $http, $scope, $window ){
@@ -12,6 +12,7 @@ angular.module('mailManager', ['vcRecaptcha'])
         				"successMessage":"hidden",
         				"errorMessage":"hidden"
         			};
+        $scope.submitButton = "Send Message";
 		};
 
 	$scope.init();
@@ -20,22 +21,24 @@ angular.module('mailManager', ['vcRecaptcha'])
 
   // Recaptcha Logic
     $scope.setResponse = function (response) {
-        console.info('Response available');
+        // console.info('Response available');
         $scope.response = response;
     };
     $scope.setWidgetId = function (widgetId) {
-        console.info('Created widget ID: %s', widgetId);
+        // console.info('Created widget ID: %s', widgetId);
         $scope.widgetId = widgetId;
     };
     $scope.cbExpiration = function() {
-        console.info('Captcha expired. Resetting response object');
+        // console.info('Captcha expired. Resetting response object');
         vcRecaptchaService.reload($scope.widgetId);
         $scope.response = null;
      };
 
     $scope.submit = function () {
-        console.log('sending the captcha response to the server', $scope.response);
+        // console.log('sending the captcha response to the server', $scope.response);
 		
+        $scope.submitButton = "Please wait.";
+
 		var payload = {
 			"name":$scope.name,
 			"email":$scope.email,
@@ -45,10 +48,10 @@ angular.module('mailManager', ['vcRecaptcha'])
 		};
 
 		if (validatePayload(payload)) {
-			console.log(payload);
-			console.log('payload was good - hitting server');
+			// console.log(payload);
+			// console.log('payload was good - hitting server');
 			$scope.checkCaptcha(payload, function(result) {
-        		console.log('server response', result);
+        		// console.log('server response', result);
     			$scope.status = "Form submitted successfully. A member of our team will reach out soon!";
         		if(result) {
         			$scope.display = {
@@ -66,24 +69,24 @@ angular.module('mailManager', ['vcRecaptcha'])
         		}
         	})
 		} else {
-			console.log(payload);
-			console.log('payload was bad');
+			// console.log(payload);
+			// console.log('payload was bad');
 		}
         
     };
 
     $scope.checkCaptcha = function (payload, cb) {
-		console.log('testing captcha');
+		// console.log('testing captcha');
 		payload.response = $scope.response;
 		
 	  // Load the view-data from the node.js server
 	  	$http.post( $scope.server + '/checkCaptcha/', payload)
 	  		.then(function(response) { 
-	          console.log(response);
+	          // console.log(response);
 	          cb(true);      	
 	        }). 
 	        catch(function(error) { 
-	          console.log(error);
+	          // console.log(error);
 	          cb(false);
 	        }); 
 
