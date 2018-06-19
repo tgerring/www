@@ -2363,7 +2363,7 @@ h1 a.navbar-brand {
 }
 
 section.services {
-    background: radial-gradient(400em 1500em, white, transparent), url(https://s3.amazonaws.com/thehoneypot/static_site/images/TBI_site_BG_diaggrid_3.svg) repeat;
+    background: radial-gradient(400em 1500em, white, transparent), url(images/tile_grid.svg) repeat;
     height: unset !important;
 }
 
