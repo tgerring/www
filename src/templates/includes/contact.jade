@@ -24,7 +24,7 @@ section.mail(ng-app='mailManager')
           textarea(placeholder='Message...', ng-model='comment', name='Message')
           div(vc-recaptcha='', theme="'light'", key='key', on-create='setWidgetId(widgetId)', on-success='setResponse(response)', on-expire='cbExpiration()')   
           br
-          input(type='submit', value='Send message' )
+          input(type='submit', value='{{submitButton}}' )
           br 
 
       .col-md-5.agileits_mail_grid_right
