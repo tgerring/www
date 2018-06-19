@@ -334,3 +334,15 @@ div#mce-error-response {
     }
 }
 
+p.mobInfo {
+    font-size: 2em !important;
+    margin: 1em;
+}
+
+h3.nav-link.mobi {
+    color: #818181 !important;
+}
+
+li.nav-item.mobiInfo {
+    margin-top: 50%;
+}
