@@ -96,7 +96,8 @@ module.exports = {
     'angular.js',
     'recaptcha.js',
     'rawgit.js',
-    'mailCtrl.js'
+    'mailCtrl.js',
+    'analytics.js'    
  
   ],
 
