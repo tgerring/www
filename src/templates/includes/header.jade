@@ -20,7 +20,19 @@ header
               a.dropdown-item.mobi(href='philanthropy') Philanthropy  
               .dropdown-divider
               a.dropdown-item.mobi(href='supply-chain') Supply Chain           
-            hr            
+            hr  
+        li.nav-item.dropdown(class="web3")
+          a#navbarDropdown.nav-link.mobi(href='#', role='button', data-toggle='dropdown', aria-haspopup='true')
+            | Web 3.0
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item.mobi(href='finance') Transparency
+              .dropdown-divider
+              a.dropdown-item.mobi(href='healthcare') Privacy
+              .dropdown-divider
+              a.dropdown-item.mobi(href='education') Free Speech
+              .dropdown-divider
+              a.dropdown-item.mobi(href='energy') Network Effect       
+            hr                        
         li.nav-item(class="contact")
           a.nav-link.mobi(href='contact') Contact
         br
@@ -72,8 +84,17 @@ header
                 a.dropdown-item(href='philanthropy') Philanthropy     
                 .dropdown-divider         
                 a.dropdown-item(href='supply-chain') Supply Chain              
-
-
+            li.nav-item.dropdown(class="industries")
+              a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true')
+                | Web 3.0
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='finance') Transparency
+                .dropdown-divider
+                a.dropdown-item(href='healthcare') Privacy
+                .dropdown-divider
+                a.dropdown-item(href='education') Free Speech
+                .dropdown-divider
+                a.dropdown-item(href='energy') Network Effect        
             li.nav-item(class="contact")
               a.nav-link(href='contact') Contact
           //- .w3_agile_login

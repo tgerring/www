@@ -2,19 +2,19 @@ extends layouts/main
 
 block title
     title
-      | Supply Chain | Blockchain Institute
+      | Energy | Blockchain Institute
 
 block description
   meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
 
 block content
-  - var nav = "supply-chain";
-  - var bannerMsg = "Blockchain in ";
-  - var bannerFocus = "Supply Chain";
-  - var home = 'nothome';
+  - var nav = "industry";
+  - var bannerImage = "energy_bg.png";
+  - var bannerMsg = "Did you know?";
+  - var bannerFocus = "Over half of US energy production is wasted each year because of inefficient distribution.";
   include includes/header
   include includes/banner
-  include includes/supply-chain
+  include includes/web3
   include includes/services-c
 
 

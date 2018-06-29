@@ -2,8 +2,8 @@
 .banner
   #carouselExampleIndicators.carousel.slide(data-ride='carousel')
     .carousel-inner(role='listbox')
-      .carousel-item.active(class="#{home}")
-        .carousel-caption(class="#{home} #{bannerFocus}")
+      .carousel-item.active(class="#{home}" style="background:url(images/#{bannerImage}) !important; background-size: cover !important; ")
+        .carousel-caption(class="#{home} #{nav}")
           h3
             | #{bannerMsg} 
             b
