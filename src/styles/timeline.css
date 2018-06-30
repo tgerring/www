@@ -2,16 +2,6 @@ html, body {
   height: 100%;
 }
 
-body {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  color: #424949;
-  background-color: #ECF0F1;
-  padding: 0 25px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
 
 h1 {
   text-align: center;
@@ -203,8 +193,4 @@ h1 span {
     text-align: center;
   }
 }
-@media (max-width: 400px) {
-  body {
-    min-height: 950px;
-  }
-}
+
