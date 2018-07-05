@@ -1,0 +1,28 @@
+extends layouts/main
+
+block title
+    title
+      | About Us | Blockchain Institute
+
+block description
+  meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
+
+block content
+  - var nav = "industry";
+  - var bannerMsg = "Welcome to ";
+  - var bannerFocus = "Web 3.0";
+  - var home = 'nothome';
+  - var bannerImage = "images/main.jpg";
+  include includes/header
+  include includes/banner
+  include includes/timeline  
+  include includes/web3_sections
+  include includes/services-c
+
+
+
+
+
+
+
+

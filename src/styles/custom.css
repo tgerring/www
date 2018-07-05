@@ -346,3 +346,7 @@ h3.nav-link.mobi {
 li.nav-item.mobiInfo {
     margin-top: 50%;
 }
+.timeline_iframe {
+    height: 100% !important;
+    width: 100% !important;
+}
