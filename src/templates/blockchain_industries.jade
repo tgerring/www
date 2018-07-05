@@ -2,27 +2,22 @@ extends layouts/main
 
 block title
     title
-      | The Blockchain Institute 
+      | About Us | Blockchain Institute
 
 block description
   meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
 
-
-
 block content
-  - var nav = 'home';
-  - var bannerMsg = "What is Web 3.0?";
-  - var bannerFocus = "";
-  - var subtitle = "We're building a new internet.";
+  - var nav = "industry";
+  - var bannerMsg = "Blockchain in ";
+  - var bannerFocus = "Action";
+  - var home = 'nothome';
   - var bannerImage = "images/main.jpg";
-  - var home = 'home';
   include includes/header
   include includes/banner
-  include includes/services
-  include includes/testimonials
-  include includes/services-b
+  include includes/industries
   include includes/services-c
-  include includes/services_summary
+
 
 
 
