@@ -332,6 +332,9 @@ div#mce-error-response {
         min-width: 100%;
         right: 0 !important;
     }
+    .col-md-4, .col-md-8 {
+        width: 100%;
+    }
 }
 
 p.mobInfo {
@@ -350,3 +353,5 @@ li.nav-item.mobiInfo {
     height: 100% !important;
     width: 100% !important;
 }
+
+

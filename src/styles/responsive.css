@@ -266,6 +266,17 @@
 	.modal-dialog {
     	max-width: 85% !important;
 	}
+	.col-md-4, .col-md-8, .col-md-3 {
+        min-width: 100%;
+    }
+
+    .timelineHeader {
+    	display: none;
+    }
+
+    .timelineBody {
+    	min-height: 100vh !important;
+    }
 
 
 }
