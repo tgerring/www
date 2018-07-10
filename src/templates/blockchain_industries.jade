@@ -1,4 +1,4 @@
-extends layouts/main
+extends layouts/industry
 
 block title
     title
@@ -13,10 +13,11 @@ block content
   - var bannerFocus = "Action";
   - var home = 'nothome';
   - var bannerImage = "images/main.jpg";
+  - var sectionImage = "images/glass-banner.png";
   include includes/header
   include includes/banner
-  include includes/industries
-  include includes/services-c
+  include includes/industries_b
+  include includes/testimonials
 
 
 

@@ -32,7 +32,7 @@ var typeMap = {
 
 module.exports = {
   appName: 'blockchainwtfedu',
-  SERVER_PORT: 1337,
+  SERVER_PORT: 1338,
   GLOBSTAR: GLOBSTAR,
   basePaths: basePaths,
 
@@ -40,6 +40,10 @@ module.exports = {
   typePaths: {
     templates: {
       src: basePaths.src + 'templates/',
+      dest: basePaths.dest + ''
+    },
+    industryTemplates: {
+      src: basePaths.src + 'templates/industries',
       dest: basePaths.dest + ''
     },
     styles: {

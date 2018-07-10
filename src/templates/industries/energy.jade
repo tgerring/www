@@ -1,0 +1,29 @@
+extends ../layouts/industry
+
+block title
+    title
+      | Energy | Blockchain Institute
+
+block description
+  meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
+
+block content
+  - var nav = "industry";
+  - var bannerMsg = "Blockchain in ";
+  - var bannerFocus = "Energy";
+  - var bannerImage = "images/main.jpg";
+  - var sectionImage = "images/glass-banner.png";
+  - var home = 'nothome';
+  include ../includes/header
+  include ../includes/banner
+  include ../includes/energy
+  include ../includes/testimonials
+  
+
+
+
+
+
+
+
+

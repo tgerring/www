@@ -1,0 +1,28 @@
+extends ../layouts/industry
+
+block title
+    title
+      | Education | Blockchain Institute
+
+block description
+  meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
+
+block content
+  - var nav = "industry";
+  - var bannerMsg = "Blockchain in ";
+  - var bannerFocus = "Education";
+  - var bannerImage = "images/main.jpg";
+  - var sectionImage = "images/glass-banner.png";
+  - var home = 'nothome';
+  include ../includes/header
+  include ../includes/banner
+  include ../includes/education
+  include ../includes/testimonials
+
+
+
+
+
+
+
+

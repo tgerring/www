@@ -139,7 +139,7 @@ h4.modal-title {
 }
 
 .innergrid1.independance:hover{
-    background: radial-gradient(15em 15em, white, #ffdb06);
+    background: radial-gradient(25em 15em, white, #ffdb06);
     color: #000000;
 }
 
@@ -147,7 +147,7 @@ h4.modal-title {
     border: 1px solid #1073aa;
 }
 .innergrid1.transparency:hover{
-    background: radial-gradient(15em 15em, white, #1073aa);
+    background: radial-gradient(25em 15em, white, #1073aa);
     color: #000000;
 }
 
@@ -155,7 +155,7 @@ h4.modal-title {
     border: 1px solid #06b7b2;
 }
 .innergrid1.decentralization:hover{
-    background: radial-gradient(15em 15em, white, #06b7b2);
+    background: radial-gradient(25em 15em, white, #06b7b2);
     color: #000000;
 }
 
@@ -163,7 +163,7 @@ h4.modal-title {
     border: 1px solid #e20a62;
 }
 .innergrid1.collaboration:hover{
-    background: radial-gradient(15em 15em, white, #e20a62);
+    background: radial-gradient(25em 15em, white, #e20a62);
     color: #000000;
 }
 
@@ -171,7 +171,7 @@ h4.modal-title {
     border: 1px solid #fc3f0d;
 }
 .innergrid1.verifiability:hover{
-    background: radial-gradient(15em 15em, white, #fc3f0d);
+    background: radial-gradient(25em 15em, white, #fc3f0d);
     color: #000000;
 }
 
@@ -179,7 +179,7 @@ h4.modal-title {
     border: 1px solid #0ad88e;
 }
 .innergrid1.open:hover{
-    background: radial-gradient(15em 15em, white, #0ad88e);
+    background: radial-gradient(25em 15em, white, #0ad88e);
     color: #000000;
 }
 .innergrid1 p {
@@ -355,4 +355,51 @@ li.nav-item.mobiInfo {
     width: 100% !important;
 }
 
+/* Web3 Timeline Background*/
+section.serv-grids._web3 {
+    background: unset;
+    background-image: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(images/glass-banner.png) !important;
+    background-size: cover !important;
 
+}
+
+/* Tile Elements */
+.row._tile {
+    padding: 2em;
+}
+
+._tile {
+
+}
+
+.inner_grid._tile {
+    border-radius: 0.25em;
+    height: 25em;
+    filter: drop-shadow(0 0 0.75rem #4c4a4b);
+}
+
+.inner_grid_wide._tile {
+    border-radius: 0.25em;
+    height: 25em;
+    filter: drop-shadow(0 0 0.75rem #4c4a4b);
+}
+
+/* Industries Tiles */
+.col-md-4 ._tile.industry {
+    background: #d1d8de;
+    margin: 1.5em;
+    border-radius: 0.5em;
+    max-width: 15em;
+    max-height: 15em;
+    filter: drop-shadow(0 0 0.25rem #4c4a4b);
+}
+
+.row.services-top-grids._tiles.industry {
+    max-width: 65%;
+    margin: auto;
+}
+
+.col-md-4 ._tile:hover {
+    filter: drop-shadow(0 0 0.45rem #4c4a4b);
+
+}    

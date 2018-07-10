@@ -1,8 +1,8 @@
-extends layouts/main
+extends layouts/web3
 
 block title
     title
-      | About Us | Blockchain Institute
+      | Web 3.0 | Blockchain Institute
 
 block description
   meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
@@ -12,12 +12,14 @@ block content
   - var bannerMsg = "Welcome to ";
   - var bannerFocus = "Web 3.0";
   - var home = 'nothome';
-  - var bannerImage = "images/main.jpg";
+  - var bannerImage = "images/prysm_banner.png";
+  - var sectionImage = "images/glass-banner.png";
   include includes/header
   include includes/banner
-  include includes/timeline  
   include includes/web3_sections
-  include includes/services-c
+  //- include includes/timeline  
+  include includes/testimonials
+  //- include includes/services-c
 
 
 

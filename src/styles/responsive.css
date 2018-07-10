@@ -1,5 +1,21 @@
 @media (max-width: 1000px) {
 
+	/* Industries Home Page */
+	.row.services-top-grids._tiles {
+	    max-width: 50%;
+	    margin: auto;
+	}
+	
+	.col-md-4 ._tile {
+	    max-height: 25em;
+	    max-width: 50em;
+	}
+
+	._tiles .col-md-4 {
+	    max-height: 25em;
+	    min-height: unset !important;
+	}
+
 	/* Nav */
 	button.navbar-toggler.navbar-toggler-right {
 	    margin-top: 0 !important;
@@ -291,4 +307,6 @@ div#navbarSupportedContent {
     width: 50% !important;
     margin-left: 50% !important;
 }
+
+
 

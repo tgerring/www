@@ -47,6 +47,36 @@ gulp.task('templates', ['scripts', 'styles'], function() {
         .pipe(gulp.dest(config.typePaths.templates.dest));
 });
 
+gulp.task('industryTemplates', ['scripts', 'styles', 'templates'], function() {
+    return es.merge(
+
+        gulp.src(config.typeMap.html, { cwd: config.typePaths.industryTemplates.src }),
+
+        gulp.src(config.typeMap.jade, { cwd: config.typePaths.industryTemplates.src })
+        .pipe(plugins.jade({ pretty: (isProduction ? false : true) })))
+
+    .pipe(plugins.inject(
+            gulp.src(config.typePaths.styles.dest + config.GLOBSTAR, { read: false })
+            .pipe(plugins.order(config.styleOrder))
+            .pipe(plugins.using({ prefix: 'Injecting' })), {
+                addRootSlash: false,
+                ignorePath: config.basePaths.dest
+            }))
+        // .pipe(plugins.inject(
+        //   gulp.src(config.typePaths.scriptshead.dest + config.GLOBSTAR, {read: false}, {starttag: '<!-- inject:head:{{ext}} -->'})
+        //   .pipe(plugins.using({prefix: 'Injecting'})),
+        //     { addRootSlash: false, ignorePath: config.basePaths.dest })
+        // )
+        .pipe(plugins.inject(
+            gulp.src([config.typePaths.scripts.dest + config.GLOBSTAR], { read: false })
+            .pipe(plugins.order(config.scriptOrder))
+            .pipe(plugins.using({ prefix: 'Injecting' })), { addRootSlash: false, ignorePath: config.basePaths.dest }))
+
+    .pipe(plugins.size({ title: 'industryTemplates', showFiles: true, gzip: true }))
+        .pipe(isProduction ? gutil.noop() : plugins.connect.reload())
+        .pipe(gulp.dest(config.typePaths.templates.dest));
+});
+
 gulp.task('styles', function() {
     return es.merge(
 
@@ -111,7 +141,7 @@ gulp.task('bundle', function() {
         .pipe(gulp.dest('..'));
 });
 
-gulp.task('rename', ['templates'], function() {
+gulp.task('rename', ['templates', 'industryTemplates'], function() {
     return gulp.src(config.typePaths.templates.dest + 'index.html')
         .pipe(isProduction ? plugins.rename('index.' + nicedate + '.html') : gutil.noop())
         .pipe(gulp.dest(config.typePaths.templates.dest));
@@ -147,5 +177,5 @@ gulp.task('build', ['clean'], function() {
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'watch', 'open');
+    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'industryTemplates', 'watch', 'open');
 });

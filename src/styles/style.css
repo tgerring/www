@@ -631,6 +631,36 @@ nav.navbar.navbar-toggleable-md.navbar-light {
 .f_con5{
     background: #023b54;
 }
+
+.f_con_a{
+    background: transparent !important;
+    color: #e20a62 !important;
+}
+.f_con1_a{
+    background: transparent !important;
+    color: #2fd151 !important;
+}
+.f_con2_a{
+    background: transparent !important;
+    color: #ffdb06 !important;
+}
+.f_con3_a{
+    background: transparent !important;
+    color: #1073aa !important;
+}
+.f_con4_a{
+    background: transparent !important;
+    color: #fc3f0d !important;
+}
+.f_con5_a{
+    background: transparent !important;
+    color: #023b54 !important;
+}
+
+.w3con {
+	font-size: 3.5em !important;
+}
+
 /* //services */
 .heading-agileinfo {
     font-weight: 600;
