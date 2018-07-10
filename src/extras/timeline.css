@@ -1,5 +1,7 @@
-/*html, body {
+html, body {
   height: 100%;
+  width: auto;
+  overflow: hidden;
 }
 
 body {
@@ -20,7 +22,7 @@ h1 {
 }
 h1 span {
   white-space: nowrap;
-}*/
+}
 
 .flex-parent {
   display: flex;

@@ -252,6 +252,9 @@
 	.col-md-4 {
 	    min-width: 100%;
 	}
+	.row._tile {
+	    display: none;
+	}
 	section.services {
 	    height: 100em !important;
 	}
