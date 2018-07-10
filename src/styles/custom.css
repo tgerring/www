@@ -137,8 +137,9 @@ h4.modal-title {
 .innergrid1.independance{
     border: 1px solid #ffdb06;
 }
+
 .innergrid1.independance:hover{
-    background: #ffdb06;
+    background: radial-gradient(15em 15em, white, #ffdb06);
     color: #000000;
 }
 
@@ -146,7 +147,7 @@ h4.modal-title {
     border: 1px solid #1073aa;
 }
 .innergrid1.transparency:hover{
-    background: #1073aa;
+    background: radial-gradient(15em 15em, white, #1073aa);
     color: #000000;
 }
 
@@ -154,7 +155,7 @@ h4.modal-title {
     border: 1px solid #06b7b2;
 }
 .innergrid1.decentralization:hover{
-    background: #06b7b2;
+    background: radial-gradient(15em 15em, white, #06b7b2);
     color: #000000;
 }
 
@@ -162,7 +163,7 @@ h4.modal-title {
     border: 1px solid #e20a62;
 }
 .innergrid1.collaboration:hover{
-    background: #e20a62;
+    background: radial-gradient(15em 15em, white, #e20a62);
     color: #000000;
 }
 
@@ -170,7 +171,7 @@ h4.modal-title {
     border: 1px solid #fc3f0d;
 }
 .innergrid1.verifiability:hover{
-    background: #fc3f0d;
+    background: radial-gradient(15em 15em, white, #fc3f0d);
     color: #000000;
 }
 
@@ -178,7 +179,7 @@ h4.modal-title {
     border: 1px solid #0ad88e;
 }
 .innergrid1.open:hover{
-    background: #0ad88e;
+    background: radial-gradient(15em 15em, white, #0ad88e);
     color: #000000;
 }
 .innergrid1 p {
@@ -255,9 +256,9 @@ h2.heading-agileinfo {
     margin-bottom: 0;
 }
 
-.testimonials {
+/*.testimonials {
  background: url(../images/glass-horiz.jpg) 0 !important;
-}
+}*/
 
 .teal {
     color: #06b7b2 !important;
