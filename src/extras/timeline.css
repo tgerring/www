@@ -213,3 +213,6 @@ h1 span {
 .flex-parent {
     min-height: 30em;
 }
+.input:hover {
+    background-color: #fc3f0d !important;
+}
