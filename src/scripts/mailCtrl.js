@@ -2,9 +2,9 @@
 
 angular.module('mailManager', ['vcRecaptcha'])
 .controller('mailCtrl',[ '$http', '$scope', '$window', function( $http, $scope, $window ){
-	$scope.server = 'http://localhost:3005'; // do not include trailing '/'
+	// $scope.server = 'http://localhost:3005'; // do not include trailing '/'
 
-	// $scope.server = 'https://enigmatic-castle-81290.herokuapp.com'; // do not include trailing '/'
+	$scope.server = 'https://enigmatic-castle-81290.herokuapp.com'; // do not include trailing '/'
 	$scope.key = "6Lef510UAAAAAHytDRJTVDGAUA_aMPaAnDDCkxV_";
 
 	$scope.init = function () {
@@ -15,6 +15,8 @@ angular.module('mailManager', ['vcRecaptcha'])
         				"errorMessage":"hidden"
         			};
         $scope.submitButton = "Send Message";
+        $scope.submitSubscribeButton = "Send";
+        console.log('ran init and button is', $scope.submitSubscribeButton);
 		};
 
 	$scope.init();
@@ -112,10 +114,14 @@ angular.module('mailManager', ['vcRecaptcha'])
 	  		.then(function(response) { 
 	          // console.log(response);
 	          cb(true);      	
+      	      $scope.submitSubscribeButton = "Thanks!";
+
 	        }). 
 	        catch(function(error) { 
 	          // console.log(error);
 	          cb(false);
+              $scope.submitSubscribeButton = "Failed";
+	        
 	        }); 
 
     }

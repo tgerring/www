@@ -50,11 +50,13 @@ footer
         .col-lg-4.footer-grid_section_1its_w3(ng-app='mailManager')
           .footer-title
             h3 Subscribe
-          .footer-text(ng-controller='mailCtrl')
-            p
-              | Stay in the loop with our monthly newsletter on all things blockchain!
-            input(type='email', name='Email', ng-model='subscribe_email', placeholder='Email...', required='')
-            input(type='submit', ng-click='subscribe()', value="{{submitSubscribeButton}}" )  
+          .footer-text
+              p
+                | Stay in the loop with our monthly newsletter on all things blockchain!
+              br
+            .mc_signup(ng-controller='mailCtrl')
+              input(type='email', name='Email', ng-model='subscribe_email', placeholder='Email...', required='', class="mc_subscribe_email",)
+              button(type='submit', ng-click='subscribe()', class="mc_subscribe" ) {{submitSubscribeButton}}
       .copyright
         p
           | © 2018 Blockchain Institute. All Rights Reserved

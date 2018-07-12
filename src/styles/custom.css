@@ -473,4 +473,19 @@ section.serv-grids._web3 {
     font-size: 2em;
 }
 
+/* Footer Subscribe */
+input.mc_subscribe {
+    width: 28%;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+input.mc_subscribe_email {
+    width: 70%;
+    vertical-align: top;
+}
+
+
+
 
