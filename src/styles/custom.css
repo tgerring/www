@@ -453,3 +453,24 @@ section.serv-grids._web3 {
     -moz-transition: 0.5s all;
 }
 
+/* Model Adjustments */
+.w3header img.img-responsive {
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+}
+
+.close_button {
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.close i.far.fa-times-circle {
+    color: black;
+    font-size: 2em;
+}
+
+

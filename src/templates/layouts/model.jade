@@ -2,23 +2,20 @@
 #automotive.modal.about-modal.fade(tabindex='-1', role='dialog')
   .modal-dialog(role='document')
     .modal-content
-      .modal-header
-        h4.modal-title Automotive Companies Understand Potential of Blockchain
-        button.close(type='button', data-dismiss='modal', aria-label='Close')
-          span(aria-hidden='true') -
+      .w3header
+        img.img-responsive(src='images/BI_Automotive.jpg', alt='BI_Automotive')
+        br
+        br
+        .dyk  
+          h4
+            | Driverless Gas Pumps?
+          p 
+            | Some estimates predict we'll see driverless cars on the road by 2020!
+        .close_button
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            i.far.fa-times-circle(aria-hidden='true')
       .modal-body
         .agileits-w3layouts-info
-          .w3header
-            img.img-responsive(src='images/BI_Automotive.jpg', alt='BI_Automotive')
-            br
-            br
-            .dyk  
-              h4
-                | Driverless Gas Pumps?
-              p 
-                | Some estimates predict we'll see driverless cars on the road by 2020!
-            hr 
-          
           p
             | While both blockchains and self-driving cars are fairly new concepts, Toyota has actually started implementing the technology in their autonomous vehicles, in two distinct ways.
           p
@@ -30,13 +27,7 @@
 #digitalRights.modal.about-modal.fade(tabindex='-1', role='dialog')
   .modal-dialog(role='document')
     .modal-content
-      .modal-header
-        h4.modal-title Digital Media Rights        
-        button.close(type='button', data-dismiss='modal', aria-label='Close')
-          span(aria-hidden='true') -
-      .modal-body
-        .agileits-w3layouts-info
-          .w3header
+      .w3header
             img.img-responsive(src='images/BI_DigitalMedia.jpg', alt='BI_DigitalMedia')
             br
             br
@@ -44,9 +35,12 @@
               h4
                 | Can you decentralize a record label?
               p 
-                | Digital media is ripe for disruption, and blockchain is the perfect tool.
-            hr 
-          
+                | Digital media is ripe for disruption, and blockchain is the perfect tool.    
+        .close_button
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            i.far.fa-times-circle(aria-hidden='true')                  
+      .modal-body
+        .agileits-w3layouts-info
           p
             | The nature of digital content is that it’s very easy to copy and distribute without permission. Content creators are often unable to protect their work and manage its use because old digital rights management tools don’t give them the ability to do that. The internet lacks a standard infrastructure to store and organize these rights and permissions. Information is kept in many separate centralized servers owned by different companies. Confusion is caused by the lack of consistency between them. If one of these servers fails or company running it goes out of business, all of that information would be lost. 
           p
@@ -60,13 +54,7 @@
 #foodSafety.modal.about-modal.fade(tabindex='-1', role='dialog')
   .modal-dialog(role='document')
     .modal-content
-      .modal-header
-        h4.modal-title Tracing Food Products with Blockchains        
-        button.close(type='button', data-dismiss='modal', aria-label='Close')
-          span(aria-hidden='true') -
-      .modal-body
-        .agileits-w3layouts-info
-          .w3header
+      .w3header
             img.img-responsive(src='images/food_on_shelves.jpg', alt='BI_food_on_shelves')
             br
             br
@@ -75,7 +63,11 @@
                 | Did you know?
               p 
                 | One in ten people world wide will become sick from contaminated food this year, with an estimated healthcare cost in the billions. 
-            hr 
+        .close_button
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            i.far.fa-times-circle(aria-hidden='true')                
+      .modal-body
+        .agileits-w3layouts-info
           
           p
             | The goal of tracing food on the blockchain gives users more insight into where their food is actually coming from. By scanning a QR code when looking to purchase produce or meat, you can seeing such details as place grown, pesticides or GMOs used, and then entire physical journey that food took to get into your shopping cart.
