@@ -2,7 +2,9 @@
 
 angular.module('mailManager', ['vcRecaptcha'])
 .controller('mailCtrl',[ '$http', '$scope', '$window', function( $http, $scope, $window ){
-	$scope.server = 'https://enigmatic-castle-81290.herokuapp.com'; // do not include trailing '/'
+	$scope.server = 'http://localhost:3005'; // do not include trailing '/'
+
+	// $scope.server = 'https://enigmatic-castle-81290.herokuapp.com'; // do not include trailing '/'
 	$scope.key = "6Lef510UAAAAAHytDRJTVDGAUA_aMPaAnDDCkxV_";
 
 	$scope.init = function () {
@@ -74,6 +76,49 @@ angular.module('mailManager', ['vcRecaptcha'])
 		}
         
     };
+
+    $scope.subscribe = function () {
+        // console.log('sending the captcha response to the server', $scope.response);
+		
+        $scope.submitSubscribeButton = "Please wait.";
+
+		var payload = {
+			"email":$scope.subscribe_email
+
+		};
+
+		if (validatePayload(payload)) {
+
+			sendSubscribe(payload, function(result) {
+
+        		if(result) {
+        			console.log('success', result)
+        		} else {
+        			console.log('failed')
+        		}
+        	})
+
+		} else {
+
+			console.log('payload was bad', payload);
+
+		}
+        
+    };    
+
+    function sendSubscribe (payload, cb) {
+
+    	$http.post( $scope.server + '/subscribe/', payload)
+	  		.then(function(response) { 
+	          // console.log(response);
+	          cb(true);      	
+	        }). 
+	        catch(function(error) { 
+	          // console.log(error);
+	          cb(false);
+	        }); 
+
+    }
 
     $scope.checkCaptcha = function (payload, cb) {
 		// console.log('testing captcha');
