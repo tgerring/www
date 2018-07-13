@@ -12,11 +12,14 @@ angular.module('mailManager', ['vcRecaptcha'])
 		$scope.display = {
         				"contactForm":"",
         				"successMessage":"hidden",
-        				"errorMessage":"hidden"
+        				"errorMessage":"hidden",
+        				"mc_signup":"",
+        				"mc_signup_message":"hidden"
         			};
         $scope.submitButton = "Send Message";
         $scope.submitSubscribeButton = "Send";
         console.log('ran init and button is', $scope.submitSubscribeButton);
+
 		};
 
 	$scope.init();
@@ -91,12 +94,19 @@ angular.module('mailManager', ['vcRecaptcha'])
 
 		if (validatePayload(payload)) {
 
-			sendSubscribe(payload, function(result) {
+			sendSubscribe(payload, function(result, error) {
 
         		if(result) {
-        			console.log('success', result)
+        			if ('error' === result.data) {
+					  noteErrorMessage(result.data);
+
+        			}else {
+	        			console.log('success', result)
+	        			mc_success_message();
+	        		}
         		} else {
-        			console.log('failed')
+        			console.log('failed', error)
+        			noteErrorMessage(error)
         		}
         	})
 
@@ -108,18 +118,34 @@ angular.module('mailManager', ['vcRecaptcha'])
         
     };    
 
+    function noteErrorMessage() {
+    	$scope.ErrorMessage = 'Sorry, there was an issue subscribing to the list.';
+    	$scope.display = {
+    		"mc_sinup":"",
+    		"mc_signup_message":""
+    	}
+    }
+
+    function mc_success_message() {
+    	$scope.ErrorMessage = 'Thanks!';
+    	$scope.display = {
+    		"mc_signup":"hidden",
+    		"mc_signup_message":""
+    	}
+    }
+
     function sendSubscribe (payload, cb) {
 
     	$http.post( $scope.server + '/subscribe/', payload)
 	  		.then(function(response) { 
 	          // console.log(response);
-	          cb(true);      	
+	          cb(response, null);      	
       	      $scope.submitSubscribeButton = "Thanks!";
 
 	        }). 
 	        catch(function(error) { 
 	          // console.log(error);
-	          cb(false);
+	          cb(null, error);
               $scope.submitSubscribeButton = "Failed";
 	        
 	        }); 

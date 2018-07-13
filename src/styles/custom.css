@@ -474,16 +474,25 @@ section.serv-grids._web3 {
 }
 
 /* Footer Subscribe */
-input.mc_subscribe {
-    width: 28%;
-    background-color: transparent;
-    border-color: white;
-    color: white;
+.mc_signup.ng-scope {
+    height: 40px;
+    text-align: center;
 }
 
 input.mc_subscribe_email {
+    height: 100%;
     width: 70%;
     vertical-align: top;
+}
+
+button.mc_subscribe {
+    background-color: grey;
+    border: 10pt;
+    border-color: grey;
+    height: 100%;
+    min-width: 25px;
+    vertical-align: top;
+
 }
 
 
@@ -497,12 +506,9 @@ input.mc_subscribe_email {
     filter: drop-shadow(0 0 0.25rem #4c4a4b);
     background: url(../images/footerBGtile_v.svg);
 }
-.grid1 h4 {
-    font-size: 20px;
-    text-transform: uppercase;
+
+._tile.industry .grid1 h4 {
     color: white;
-    font-weight: 600;
-    margin: 28px 0px 17px 0px;
 }
 
 

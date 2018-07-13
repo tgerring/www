@@ -35,6 +35,7 @@ footer
               li
                 a(href='https://www.reddit.com/r/BlockchainInstitute')
                   i.fab.fa-reddit
+
               //- li
               //-   a(href='#')
               //-     i.fab.fa-linkedin-in
@@ -47,16 +48,23 @@ footer
         //-     p
         //-       | Email : 
         //-       a(href='mailto:info@theblockchaininstitute.org') info@theblockchaininstitute.org
-        .col-lg-4.footer-grid_section_1its_w3(ng-app='mailManager')
+        .col-lg-4.footer-grid_section_1its_w3(ng-app='mailManager' ng-controller='mailCtrl')
           .footer-title
             h3 Subscribe
           .footer-text
               p
                 | Stay in the loop with our monthly newsletter on all things blockchain!
               br
-            .mc_signup(ng-controller='mailCtrl')
+            .mc_signup(class="{{display.mc_signup}}")
               input(type='email', name='Email', ng-model='subscribe_email', placeholder='Email...', required='', class="mc_subscribe_email",)
-              button(type='submit', ng-click='subscribe()', class="mc_subscribe" ) {{submitSubscribeButton}}
+              button(ng-click='subscribe()', class="mc_subscribe" )
+                i.fa.fa-envelope
+            .mc_signup.mc_error(class="{{display.mc_signup_message}}")
+              br
+              p
+                | {{ErrorMessage}}
+              br
+
       .copyright
         p
           | © 2018 Blockchain Institute. All Rights Reserved
