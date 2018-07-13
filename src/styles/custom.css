@@ -487,5 +487,22 @@ input.mc_subscribe_email {
 }
 
 
+/* Black tile background  */
+.col-md-4 ._tile.industry {
+    margin: 1.5em;
+    border-radius: 0.5em;
+    max-width: 15em;
+    max-height: 15em;
+    -webkit-filter: drop-shadow(0 0 0.25rem #4c4a4b);
+    filter: drop-shadow(0 0 0.25rem #4c4a4b);
+    background: url(../images/footerBGtile_v.svg);
+}
+.grid1 h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    margin: 28px 0px 17px 0px;
+}
 
 
