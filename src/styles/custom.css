@@ -512,3 +512,14 @@ button.mc_subscribe {
 }
 
 
+/* Profile Page */
+img.img-profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    float: right;
+}
+
+.container.profile {
+    width: 60%;
+}
+

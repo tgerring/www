@@ -250,6 +250,37 @@
 
 @media (max-width: 1100px) {
 
+	/* Profiles / About Us Page */
+	h2.profile {
+	    font-size: 6vw;
+	    margin-top: 1em;
+	}
+
+	h3.profile {
+	    font-size: 4vw;
+	}
+
+	p.para1 {
+	    font-size: 4vw;
+	}
+
+
+	/* nav */
+	button.navbar-toggler.navbar-toggler-right {
+	    text-align: center;
+	    margin-top: 0.55em;
+	    background-color: white;
+	}
+
+	div#navbarSupportedContent {
+	    width: 50% !important;
+	    margin-left: 50% !important;
+	}
+
+	.mc_signup {
+	    text-align: center;
+	}	
+
 	/* Tiles + Timeline */
 	.col-md-4 {
 	    min-width: 100%;
@@ -317,17 +348,6 @@
     }
 
 
-}
-
-button.navbar-toggler.navbar-toggler-right {
-    text-align: center;
-    margin-top: 0.55em;
-    background-color: white;
-}
-
-div#navbarSupportedContent {
-    width: 50% !important;
-    margin-left: 50% !important;
 }
 
 
