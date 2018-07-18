@@ -1,0 +1,29 @@
+extends layouts/industry
+
+block title
+    title
+      | Industry | Blockchain Institute
+
+block description
+  meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
+
+block content
+  - var nav = "industry";
+  - var bannerMsg = "Blockchain in ";
+  - var bannerFocus = "Action";
+  - var home = 'nothome';
+  - var bannerImage = "images/main.jpg";
+  - var sectionImage = "images/web3_3.png";
+  - var bannerImage = "images/prysm_banner.png";
+  include includes/header
+  include includes/banner
+  include includes/industries_b
+  include includes/testimonials
+
+
+
+
+
+
+
+

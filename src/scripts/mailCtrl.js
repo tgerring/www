@@ -2,7 +2,9 @@
 
 angular.module('mailManager', ['vcRecaptcha'])
 .controller('mailCtrl',[ '$http', '$scope', '$window', function( $http, $scope, $window ){
-	$scope.server = 'https://enigmatic-castle-81290.herokuapp.com'; // do not include trailing '/'
+	// $scope.server = 'http://localhost:3005'; // do not include trailing '/'
+
+	$scope.server = 'https://app.theblockchaininstitute.org'; // do not include trailing '/'
 	$scope.key = "6Lef510UAAAAAHytDRJTVDGAUA_aMPaAnDDCkxV_";
 
 	$scope.init = function () {
@@ -10,9 +12,14 @@ angular.module('mailManager', ['vcRecaptcha'])
 		$scope.display = {
         				"contactForm":"",
         				"successMessage":"hidden",
-        				"errorMessage":"hidden"
+        				"errorMessage":"hidden",
+        				"mc_signup":"",
+        				"mc_signup_message":"hidden"
         			};
         $scope.submitButton = "Send Message";
+        $scope.submitSubscribeButton = "Send";
+        console.log('ran init and button is', $scope.submitSubscribeButton);
+
 		};
 
 	$scope.init();
@@ -74,6 +81,76 @@ angular.module('mailManager', ['vcRecaptcha'])
 		}
         
     };
+
+    $scope.subscribe = function () {
+        // console.log('sending the captcha response to the server', $scope.response);
+		
+        $scope.submitSubscribeButton = "Please wait.";
+
+		var payload = {
+			"email":$scope.subscribe_email
+
+		};
+
+		if (validatePayload(payload)) {
+
+			sendSubscribe(payload, function(result, error) {
+
+        		if(result) {
+        			if ('error' === result.data) {
+					  noteErrorMessage(result.data);
+
+        			}else {
+	        			console.log('success', result)
+	        			mc_success_message();
+	        		}
+        		} else {
+        			console.log('failed', error)
+        			noteErrorMessage(error)
+        		}
+        	})
+
+		} else {
+
+			console.log('payload was bad', payload);
+
+		}
+        
+    };    
+
+    function noteErrorMessage() {
+    	$scope.ErrorMessage = 'Sorry, there was an issue subscribing to the list.';
+    	$scope.display = {
+    		"mc_sinup":"",
+    		"mc_signup_message":""
+    	}
+    }
+
+    function mc_success_message() {
+    	$scope.ErrorMessage = 'Thanks!';
+    	$scope.display = {
+    		"mc_signup":"hidden",
+    		"mc_signup_message":""
+    	}
+    }
+
+    function sendSubscribe (payload, cb) {
+
+    	$http.post( $scope.server + '/subscribe/', payload)
+	  		.then(function(response) { 
+	          // console.log(response);
+	          cb(response, null);      	
+      	      $scope.submitSubscribeButton = "Thanks!";
+
+	        }). 
+	        catch(function(error) { 
+	          // console.log(error);
+	          cb(null, error);
+              $scope.submitSubscribeButton = "Failed";
+	        
+	        }); 
+
+    }
 
     $scope.checkCaptcha = function (payload, cb) {
 		// console.log('testing captcha');
