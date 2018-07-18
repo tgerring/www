@@ -1,8 +1,8 @@
-extends ../layouts/industry
+extends layouts/industry
 
 block title
     title
-      | Education | Blockchain Institute
+      | Healthcare | Blockchain Institute
 
 block description
   meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
@@ -10,14 +10,14 @@ block description
 block content
   - var nav = "industry";
   - var bannerMsg = "Blockchain in ";
-  - var bannerFocus = "Education";
+  - var bannerFocus = "Healthcare";
   - var sectionImage = "images/web3_5.png";
   - var bannerImage = "images/prysm_banner.png";
   - var home = 'nothome';
-  include ../includes/header
-  include ../includes/banner
-  include ../includes/education
-  include ../includes/testimonials
+  include includes/header
+  include includes/banner
+  include includes/healthcare
+  include includes/testimonials
 
 
 
