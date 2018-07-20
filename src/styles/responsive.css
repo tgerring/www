@@ -1,5 +1,21 @@
 @media (max-width: 1000px) {
 
+	/* Industries Home Page */
+	.row.services-top-grids._tiles {
+	    max-width: 50%;
+	    margin: auto;
+	}
+	
+	.col-md-4 ._tile {
+	    max-height: 25em;
+	    max-width: 50em;
+	}
+
+	._tiles .col-md-4 {
+	    max-height: 25em;
+	    min-height: unset !important;
+	}
+
 	/* Nav */
 	button.navbar-toggler.navbar-toggler-right {
 	    margin-top: 0 !important;
@@ -233,9 +249,62 @@
 }	
 
 @media (max-width: 1100px) {
+
+	/* Profiles / About Us Page */
+	h2.profile {
+	    font-size: 6vw;
+	    margin-top: 1em;
+	}
+
+	h3.profile {
+	    font-size: 4vw;
+	}
+
+	p.para1 {
+	    font-size: 4vw;
+	}
+
+
+	/* nav */
+	button.navbar-toggler.navbar-toggler-right {
+	    text-align: center;
+	    margin-top: 0.55em;
+	    background-color: white;
+	}
+
+	div#navbarSupportedContent {
+	    width: 50% !important;
+	    margin-left: 50% !important;
+	}
+
+	.mc_signup {
+	    text-align: center;
+	}	
+
+	/* Tiles + Timeline */
 	.col-md-4 {
 	    min-width: 100%;
 	}
+	.row._tile.timeline {
+	    display: none;
+	}
+
+
+	.inner_grid._tile.w3 {
+	    margin: 2em;
+	    min-height: 35em;
+	}
+
+	/* Web 3 */
+	.grid1 i.fas {
+	    font-size: 7em !important;
+	    margin-right: 0.25em;
+	}
+
+	.row.services-top-grids {
+	    margin-bottom: 5em;
+	}
+
 	section.services {
 	    height: 100em !important;
 	}
@@ -266,18 +335,20 @@
 	.modal-dialog {
     	max-width: 85% !important;
 	}
+	.col-md-4, .col-md-8, .col-md-3 {
+        min-width: 100%;
+    }
+
+    .timelineHeader {
+    	display: none;
+    }
+
+    .timelineBody {
+    	min-height: 100vh !important;
+    }
 
 
 }
 
-button.navbar-toggler.navbar-toggler-right {
-    text-align: center;
-    margin-top: 0.55em;
-    background-color: white;
-}
 
-div#navbarSupportedContent {
-    width: 50% !important;
-    margin-left: 50% !important;
-}
 
