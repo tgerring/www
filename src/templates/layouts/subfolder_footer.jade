@@ -1,0 +1,85 @@
+// footer
+footer
+  section.footer.footer_w3layouts_section_1its
+    .container
+      .row.footer-top
+        .col-lg-4.footer-grid_section_1its_w3
+          .footer-title
+            h3 Help
+          ul.links
+
+            li
+              a(href='web3') Web 3.0
+            li
+              a(href='blockchain_industries') Blockchain in Action
+            li
+              a(href='programs') Programs
+            li
+              a(href='events') Events
+
+
+        .col-lg-4.footer-grid_section_1its_w3
+          .footer-title
+            h3 About Us
+          .footer-text
+            p
+              | The Blockchain Institute was founded to promote the adoption, development, and use of blockchain technology. 
+              a(href="contact") Contact Us
+            ul.social_section_1info
+              li
+                a(href='https://www.facebook.com/TheBlockchainInstitute')
+                  i.fab.fa-facebook-f
+              li
+                a(href='https://twitter.com/Blockchain_EDU')
+                  i.fab.fa-twitter
+              li
+                a(href='https://www.reddit.com/r/BlockchainInstitute')
+                  i.fab.fa-reddit
+
+              //- li
+              //-   a(href='#')
+              //-     i.fab.fa-linkedin-in
+        //- .col-lg-3.footer-grid_section_1its_w3
+        //-   .footer-title
+        //-     h3 Contact Info
+        //-   .contact-info
+        //-     h4 Location :
+        //-     p 4649 N Broadway, Chicago, IL.
+        //-     p
+        //-       | Email : 
+        //-       a(href='mailto:info@theblockchaininstitute.org') info@theblockchaininstitute.org
+        .col-lg-4.footer-grid_section_1its_w3(ng-app='mailManager' ng-controller='mailCtrl')
+          .footer-title
+            h3 Subscribe
+          .footer-text
+              p
+                | Stay in the loop with our monthly newsletter on all things blockchain!
+              br
+            .mc_signup(class="{{display.mc_signup}}")
+              input(type='email', name='Email', ng-model='subscribe_email', placeholder='hermes@planetexpress.com', required='', class="mc_subscribe_email",)
+              button(ng-click='subscribe()', class="mc_subscribe" )
+                  i.fa.fa-envelope
+            .mc_signup.mc_error(class="{{display.mc_signup_message}}")
+              br
+              p
+                | {{ErrorMessage}}
+              br
+
+      .copyright
+        p
+          | © 2018 Blockchain Institute. All Rights Reserved
+
+// //footer
+// Global site tag (gtag.js) - Google Analytics
+script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-121231750-1')  
+link(href='//fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif', rel='stylesheet')
+link(href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700', rel='stylesheet')
+link(rel='apple-touch-icon', sizes='180x180', href='../apple-touch-icon.png')
+link(rel='icon', type='image/png', sizes='32x32', href='../favicon-32x32.png')
+link(rel='icon', type='image/png', sizes='16x16', href='../favicon-16x16.png')
+link(rel='manifest', href='../site.webmanifest')
+link(rel='mask-icon', href='../safari-pinned-tab.svg', color='#5bbad5')
+meta(name='msapplication-TileColor', content='#da532c')
+meta(name='theme-color', content='#ffffff')          
+// Load JavaScript
+| <!-- inject:js --><!-- endinject -->

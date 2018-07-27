@@ -1,8 +1,8 @@
-extends layouts/industry
+extends ../layouts/industry
 
 block title
     title
-      | Philanthropy | Blockchain Institute
+      | Finance | Blockchain Institute
 
 block description
   meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
@@ -10,15 +10,14 @@ block description
 block content
   - var nav = "industry";
   - var bannerMsg = "Blockchain in ";
-  - var bannerFocus = "Philanthropy";
-  - var bannerImage = "images/prysm_banner.jpg";
+  - var bannerFocus = "Finance";
   - var sectionImage = "images/web3_5.jpg";
+  - var bannerImage = "images/prysm_banner.jpg";
   - var home = 'nothome';
-  include includes/header
-  include includes/banner
-  include includes/philanthropy
-  include includes/testimonials
-
+  include ../includes/header
+  include ../includes/banner
+  include ../includes/finance
+  include ../includes/testimonials
 
 
 
