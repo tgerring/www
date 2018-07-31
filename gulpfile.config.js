@@ -42,6 +42,10 @@ module.exports = {
       src: basePaths.src + 'templates/',
       dest: basePaths.dest + ''
     },
+    industryTemplates: {
+      src: basePaths.src + 'templates/industries/',
+      dest: basePaths.dest + 'industries/'
+    },
     styles: {
       src: basePaths.src + 'styles/',
       dest: basePaths.dest + 'css/'
