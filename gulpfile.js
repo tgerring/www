@@ -20,39 +20,9 @@ gulp.task('clean', function() {
 gulp.task('templates', ['scripts', 'styles'], function() {
     return es.merge(
 
-        gulp.src(config.typeMap.html, { cwd: config.typePaths.templates.src }),
+        gulp.src(config.typeMap.html, { cwd: config.typePaths.templates.src + config.GLOBSTAR }),
 
-        gulp.src(config.typeMap.jade, { cwd: config.typePaths.templates.src })
-        .pipe(plugins.jade({ pretty: (isProduction ? false : true) })))
-
-    .pipe(plugins.inject(
-            gulp.src(config.typePaths.styles.dest + config.GLOBSTAR, { read: false })
-            .pipe(plugins.order(config.styleOrder))
-            .pipe(plugins.using({ prefix: 'Injecting' })), {
-                addRootSlash: false,
-                ignorePath: config.basePaths.dest
-            }))
-        // .pipe(plugins.inject(
-        //   gulp.src(config.typePaths.scriptshead.dest + config.GLOBSTAR, {read: false}, {starttag: '<!-- inject:head:{{ext}} -->'})
-        //   .pipe(plugins.using({prefix: 'Injecting'})),
-        //     { addRootSlash: false, ignorePath: config.basePaths.dest })
-        // )
-        .pipe(plugins.inject(
-            gulp.src([config.typePaths.scripts.dest + config.GLOBSTAR], { read: false })
-            .pipe(plugins.order(config.scriptOrder))
-            .pipe(plugins.using({ prefix: 'Injecting' })), { addRootSlash: false, ignorePath: config.basePaths.dest }))
-
-    .pipe(plugins.size({ title: 'templates', showFiles: true, gzip: true }))
-        .pipe(isProduction ? gutil.noop() : plugins.connect.reload())
-        .pipe(gulp.dest(config.typePaths.templates.dest));
-});
-
-gulp.task('industryTemplates', ['scripts', 'styles'], function() {
-    return es.merge(
-
-        gulp.src(config.typeMap.html, { cwd: config.typePaths.industryTemplates.src }),
-
-        gulp.src(config.typeMap.jade, { cwd: config.typePaths.industryTemplates.src })
+        gulp.src(config.typeMap.jade, { cwd: config.typePaths.templates.src + config.GLOBSTAR })
         .pipe(plugins.jade({ pretty: (isProduction ? false : true) })))
 
     .pipe(plugins.inject(
@@ -74,8 +44,38 @@ gulp.task('industryTemplates', ['scripts', 'styles'], function() {
 
     .pipe(plugins.size({ title: 'templates', showFiles: true, gzip: true }))
         .pipe(isProduction ? gutil.noop() : plugins.connect.reload())
-        .pipe(gulp.dest(config.typePaths.industryTemplates.dest));
+        .pipe(gulp.dest(config.typePaths.templates.dest));
 });
+
+// gulp.task('industryTemplates', ['scripts', 'styles'], function() {
+//     return es.merge(
+
+//         gulp.src(config.typeMap.html, { cwd: config.typePaths.industryTemplates.src }),
+
+//         gulp.src(config.typeMap.jade, { cwd: config.typePaths.industryTemplates.src })
+//         .pipe(plugins.jade({ pretty: (isProduction ? false : true) })))
+
+//     .pipe(plugins.inject(
+//             gulp.src(config.typePaths.styles.dest + config.GLOBSTAR, { read: false })
+//             .pipe(plugins.order(config.styleOrder))
+//             .pipe(plugins.using({ prefix: 'Injecting' })), {
+//                 addRootSlash: true,
+//                 ignorePath: config.basePaths.dest
+//             }))
+//         // .pipe(plugins.inject(
+//         //   gulp.src(config.typePaths.scriptshead.dest + config.GLOBSTAR, {read: false}, {starttag: '<!-- inject:head:{{ext}} -->'})
+//         //   .pipe(plugins.using({prefix: 'Injecting'})),
+//         //     { addRootSlash: false, ignorePath: config.basePaths.dest })
+//         // )
+//         .pipe(plugins.inject(
+//             gulp.src([config.typePaths.scripts.dest + config.GLOBSTAR], { read: false })
+//             .pipe(plugins.order(config.scriptOrder))
+//             .pipe(plugins.using({ prefix: 'Injecting' })), { addRootSlash: true, ignorePath: config.basePaths.dest }))
+
+//     .pipe(plugins.size({ title: 'templates', showFiles: true, gzip: true }))
+//         .pipe(isProduction ? gutil.noop() : plugins.connect.reload())
+//         .pipe(gulp.dest(config.typePaths.industryTemplates.dest));
+// });
 
 gulp.task('styles', function() {
     return es.merge(
@@ -173,9 +173,11 @@ gulp.task('open', ['templates'], function() {
 // Define the default task as a sequence of the above tasks
 // Additionally, enable production build on any task by adding "--prod"
 gulp.task('build', ['clean'], function() {
-    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'industryTemplates', 'rename');
+    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'rename');
+    // gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'industryTemplates', 'rename');
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'industryTemplates', 'watch', 'open');
+    //gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'industryTemplates', 'watch', 'open');
+    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'watch', 'open');
 });
