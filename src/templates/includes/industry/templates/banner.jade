@@ -1,0 +1,15 @@
+// /banner
+.banner
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    .carousel-inner(role='listbox')
+      .carousel-item.active(class="#{home}" style="background-image: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../#{bannerImage}) !important")
+        .carousel-caption(class="#{home} #{bannerFocus}")
+          h3
+            | #{bannerMsg} 
+            b
+              span #{bannerFocus}
+          span.bannerSubtitle 
+            | #{subtitle}
+            i.flaticon-airplane49
+
+// //banner
