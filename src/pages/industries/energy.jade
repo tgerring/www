@@ -1,23 +1,24 @@
-extends ../layouts/industry
+extends /layouts/industry
 
 block title
     title
-      | Supply Chain | Blockchain Institute
+      | Energy | Blockchain Institute
 
 block description
   meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
 
 block content
-  - var nav = "supply-chain";
+  - var nav = "industry";
   - var bannerMsg = "Blockchain in ";
-  - var bannerFocus = "Supply Chain";
+  - var bannerFocus = "Energy";
   - var sectionImage = "/images/web3_5.jpg";
   - var bannerImage = "/images/prysm_banner.jpg";
   - var home = 'nothome';
-  include ../includes/industry/templates/header
-  include ../includes/industry/templates/banner
-  include ../includes/industry/profile/supply-chain
-  include ../includes/industry/templates/spacer
+  include /includes/industry/templates/header
+  include /includes/industry/templates/banner
+  include /includes/industry/profile/energy
+  include /includes/industry/templates/spacer
+  
 
 
 
