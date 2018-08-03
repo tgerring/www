@@ -1,4 +1,4 @@
-extends layouts/web3
+extends /layouts/web3
 
 block title
     title
@@ -14,9 +14,9 @@ block content
   - var home = 'nothome';
   - var bannerImage = "images/web3_1.png";
   - var sectionImage = "images/web3_5.jpg";
-  include includes/header
-  include includes/banner
-  include includes/web3_sections
+  include /includes/header
+  include /includes/banner
+  include /includes/web3_sections
 
   // - var tile_section_header = "Web 3.0 light reading";
   - var tile_1_header = "Online Privacy";
@@ -34,8 +34,8 @@ block content
   - var tile_3_image = "images/SupplyChain_1.png";
   - var tile_3_link = "/supply-chain.html";  
 
-  include includes/testimonials
-  include includes/tiles
+  include /includes/testimonials
+  include /includes/tiles
   //- include includes/timeline  
   //- include includes/testimonials_2
   //- include includes/services-c

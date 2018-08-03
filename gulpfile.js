@@ -19,17 +19,16 @@ gulp.task('clean', function() {
 
 gulp.task('templates', ['scripts', 'styles'], function() {
     return es.merge(
-
         gulp.src(config.typeMap.html, { cwd: config.typePaths.templates.src }),
 
         gulp.src(config.typeMap.jade, { cwd: config.typePaths.templates.src })
-        .pipe(plugins.jade({ pretty: (isProduction ? false : true) })))
+        .pipe(plugins.jade({ basedir: "src/templates/", pretty: (isProduction ? false : true) })))
 
     .pipe(plugins.inject(
             gulp.src(config.typePaths.styles.dest + config.GLOBSTAR, { read: false })
             .pipe(plugins.order(config.styleOrder))
             .pipe(plugins.using({ prefix: 'Injecting' })), {
-                addRootSlash: false,
+                addRootSlash: true,
                 ignorePath: config.basePaths.dest
             }))
         // .pipe(plugins.inject(
@@ -40,11 +39,41 @@ gulp.task('templates', ['scripts', 'styles'], function() {
         .pipe(plugins.inject(
             gulp.src([config.typePaths.scripts.dest + config.GLOBSTAR], { read: false })
             .pipe(plugins.order(config.scriptOrder))
-            .pipe(plugins.using({ prefix: 'Injecting' })), { addRootSlash: false, ignorePath: config.basePaths.dest }))
+            .pipe(plugins.using({ prefix: 'Injecting' })), { addRootSlash: true, ignorePath: config.basePaths.dest }))
 
     .pipe(plugins.size({ title: 'templates', showFiles: true, gzip: true }))
         .pipe(isProduction ? gutil.noop() : plugins.connect.reload())
         .pipe(gulp.dest(config.typePaths.templates.dest));
+});
+
+gulp.task('subDirectories', ['scripts', 'styles'], function() {
+    return es.merge(
+
+        gulp.src(config.typeMap.html, { cwd: config.typePaths.subDirectories.src + config.GLOBSTAR }),
+
+        gulp.src(config.typeMap.jade, { cwd: config.typePaths.subDirectories.src + config.GLOBSTAR })
+        .pipe(plugins.jade({ basedir: "src/templates/", pretty: (isProduction ? false : true) })))
+
+    .pipe(plugins.inject(
+            gulp.src(config.typePaths.styles.dest + config.GLOBSTAR, { read: false })
+            .pipe(plugins.order(config.styleOrder))
+            .pipe(plugins.using({ prefix: 'Injecting' })), {
+                addRootSlash: true,
+                ignorePath: config.basePaths.dest
+            }))
+        // .pipe(plugins.inject(
+        //   gulp.src(config.typePaths.scriptshead.dest + config.GLOBSTAR, {read: false}, {starttag: '<!-- inject:head:{{ext}} -->'})
+        //   .pipe(plugins.using({prefix: 'Injecting'})),
+        //     { addRootSlash: false, ignorePath: config.basePaths.dest })
+        // )
+        .pipe(plugins.inject(
+            gulp.src([config.typePaths.scripts.dest + config.GLOBSTAR], { read: false })
+            .pipe(plugins.order(config.scriptOrder))
+            .pipe(plugins.using({ prefix: 'Injecting' })), { addRootSlash: true, ignorePath: config.basePaths.dest }))
+
+    .pipe(plugins.size({ title: 'subDirectories', showFiles: true, gzip: true }))
+        .pipe(isProduction ? gutil.noop() : plugins.connect.reload())
+        .pipe(gulp.dest(config.typePaths.subDirectories.dest));
 });
 
 gulp.task('styles', function() {
@@ -143,9 +172,9 @@ gulp.task('open', ['templates'], function() {
 // Define the default task as a sequence of the above tasks
 // Additionally, enable production build on any task by adding "--prod"
 gulp.task('build', ['clean'], function() {
-    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'rename');
+    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'subDirectories', 'rename');
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'watch', 'open');
+    gulp.start('extras', 'scripts', 'styles', 'images', 'templates', 'subDirectories',  'watch', 'open');
 });

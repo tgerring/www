@@ -1,4 +1,4 @@
-extends layouts/main
+extends /layouts/main
 
 block title
     title
@@ -15,8 +15,8 @@ block content
   - var home = 'nothome';
   - var sectionImage = "images/web3_5.jpeg";
 
-  include includes/header
-  include includes/banner
+  include /includes/header
+  include /includes/banner
 
     // - var tile_section_header = "Web 3.0 light reading";
   - var tile_1_header = "Pizza Day!";
@@ -29,15 +29,15 @@ block content
   - var tile_2_image = "images/girlcon.png";
   - var tile_2_link = "http://girlcon.io/";
 
-  - var tile_3_header = "The Voice of Chicago";
-  - var tile_3_subHeader = "The Voice of Chicago is Chicago's premier blockchain education conference.";
+  - var tile_3_header = "The Voice of Blockchain";
+  - var tile_3_subHeader = "The Voice of Blockchain is Chicago's premier blockchain education conference.";
   - var tile_3_image = "images/cbp.png";
   - var tile_3_link = "http://chicagoblockchainproject.com/voice-of-blockchain/";  
 
 
 
-  include includes/events
-  include includes/tiles
+  include /includes/events
+  include /includes/tiles
   
 
 

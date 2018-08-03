@@ -7,6 +7,8 @@ var basePaths = {
 };
 
 var typeMap = {
+
+
     // templates
     jade:       ['*.jade'],
     html:       ['*.html'],
@@ -39,8 +41,12 @@ module.exports = {
 
   typePaths: {
     templates: {
-      src: basePaths.src + 'templates/',
-      dest: basePaths.dest + ''
+      src: basePaths.src + 'pages/',
+      dest: basePaths.dest
+    },
+    subDirectories: {
+      src: basePaths.src + 'pages/',
+      dest: basePaths.dest
     },
     styles: {
       src: basePaths.src + 'styles/',
