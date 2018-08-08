@@ -1,0 +1,350 @@
+@media (max-width: 1000px) {
+
+	/* Industries Home Page */
+	.row.services-top-grids._tiles {
+	    max-width: 50%;
+	    margin: auto;
+	}
+	
+	.col-md-4 ._tile {
+	    max-height: 25em;
+	    max-width: 50em;
+	}
+
+	._tiles .col-md-4 {
+	    max-height: 25em;
+	    min-height: unset !important;
+	}
+
+	/* Nav */
+	button.navbar-toggler.navbar-toggler-right {
+	    margin-top: 0 !important;
+	}
+	span.navbar-toggler-icon {
+    	padding: 1.75em;
+    	margin-top: 0 !important;
+	}
+
+	/* Hero Image */
+	.carousel-item.active.home {
+    	height: 100vh;
+	}
+
+	.carousel-caption {
+    	top: 30vh;
+	}
+	.carousel-caption.nothome {
+    	vertical-align: middle;
+    	top: 0;
+
+	}	
+	.carousel-caption.nothome.Finance, .carousel-caption.nothome.Energy, .carousel-caption.nothome.Aid {
+    	top: 25%;
+	}
+
+	.carousel-caption h3 {
+    	font-size: 8em !important;
+	    letter-spacing: 2px;
+	    line-height: 1.4em;
+	    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.67) !important;
+	}
+
+	span.bannerSubtitle {
+	    font-size: 4em;
+	}
+
+	/* Services Sections */
+	h2.heading-agileinfo, h3.heading-agileinfo.why_us {
+    	font-size: 3.5em;
+    	margin-top: 1.5em;
+	}
+
+	p.margin {
+    	font-size: 4vw;
+    	line-height: 1.5em;
+    	margin-top: 1em;
+	}
+
+	.services-top-grids {
+    	top: 15em !important;
+	}
+	
+	.grid1 h4 {
+    	font-size: 3.5em !important;
+	}
+	.grid1 p.justify {
+    	font-size: 4vw;
+	}
+	.services-top-grids .col-md-4 {
+    	min-height: 90vw;
+	}
+
+	/* WHY BLOCKCHAIN */
+	span.heading-agileinfo-span {
+	    font-size: 4vw;
+	}
+	.innergrid1 h3 {
+	    font-size: 5vw !important;
+	    line-height: 5vw !important;
+	}
+	.innergrid1 p {
+	    font-size: 4vw !important;
+	    line-height: 5vw !important;
+	    padding: 2.5vw !important;
+	}
+
+
+	.col-md-6 {
+    	min-width: 100%;
+	}
+	.testimonials {
+    	background: url(../images/second.jpg);
+	}
+	.carousel-item {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 22, 23, 0.2)), to(rgba(23, 22, 23, 0.5))), url(../images/main.jpg) no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/main.jpg) no-repeat !important;
+		background-size: cover  !important;
+	}
+	.ser_tp {
+		max-width: 100% !important;
+	}
+
+	/* Spotlight */
+	.inner_grid h3 {
+    	font-size: 5vw !important;
+    	font-weight: bolder !important;
+	}
+	.inner_grid p {
+	    font-size: 3.5vw !important;
+	    line-height: 5vw !important;
+	    padding-bottom: 0.5vw !important;
+	}
+	.serv-grids .row .col-md-4 {
+	    min-height: 75vw !important; 
+	}
+	.inner_grid h3 {
+	    margin-top: 5vw;
+	}
+
+	a.readMoreButton {
+	    font-size: 3.5vw !important;
+	    padding: 3vw !important;
+	    border-radius: 2vw !important;
+	}
+
+	/* Institute Services Section */
+	.col-sm-2.services-bottom-icon {
+	    min-width: 100%;
+	}
+
+	.col-sm-10.services-bottom-info {
+	    text-align: center;
+	    min-width: 100%;
+	}
+
+	.col-sm-10.services-bottom-info h5 {
+	    font-size: 5vw !important;
+	}
+
+	.row.wthree-services-bottom-grids {
+	    margin-left: unset !important;
+	}
+
+	.services-bottom-info ul {
+	    font-size: 4vw;
+	    line-height: 6vw;
+	}
+
+	/* Industry (non-homepage) */
+	.carousel-caption.nothome h3 {
+	    font-size: 7vw !important;
+	    margin-top: 5vw;
+	}
+	.aboutleft h3 {
+	    display: none;
+	}
+	.aboutleft p.para1 {
+	    margin-bottom: 2em;
+	    font-size: 3.5vw;
+	    line-height: 4vw;
+	}
+	.col-md-6.aboutleft {
+	    margin-bottom: 5vw;
+	}
+	.aboutleft p {
+	    font-size: 3vw !important;
+	}
+	.carousel-caption.nothome.Philanthropy h3, .carousel-caption.nothome.Energy h3 {
+	    margin-top: 0 !important;
+	}
+
+
+	.close span {
+	    padding: 5vw;
+	    font-size: 4vw;
+	}
+	.agileits-w3layouts-info p {
+	    font-size: 2vw;
+	}
+
+	/* Model Popup */
+	h4.modal-title {
+	    font-size: 6vw !important;
+	}
+	.agileits-w3layouts-info p {
+	    font-size: 3vw !important;
+	    line-height: 4vw !important;
+	}
+
+	/* Footer */
+	ul.links {
+	    text-align: center;
+	}
+	.footer-title {
+	    text-align: center;
+	}
+	ul.links li a {
+	    font-size: 3vw !important;
+	}
+	.footer p {
+	    font-size: 3vw !important;
+	}
+	.footer input[type="email"] {
+	    font-size: 3vw !important;
+	}
+	.footer i.fa.fa-envelope {
+	    font-size: 5vw !important;
+	}
+	ul.social_section_1info a {
+	    font-size: 5vw !important;
+	}
+	.footer-text {
+	    text-align: center;
+	}
+	.footer_w3layouts_section_1its h3 {
+	    font-size: 4vw !important;
+	    margin-top: 2vw !important;
+	}
+
+	input#mc-embedded-subscribe {
+	    font-size: 2em;
+        max-width: 20%;
+	}
+	div#mce-success-response {
+	    font-size: 2em;
+	    padding: 1em;
+	    line-height: 1.5em;
+	}
+	div#mce-error-response {
+		font-size: 2em;
+	}
+
+	.mce_inline_error {
+	    font-size: 2em;
+	    padding: 1em;
+	}
+
+}	
+
+@media (max-width: 1100px) {
+
+	/* Profiles / About Us Page */
+	h2.profile {
+	    font-size: 6vw;
+	    margin-top: 1em;
+	}
+
+	h3.profile {
+	    font-size: 4vw;
+	}
+
+	p.para1 {
+	    font-size: 4vw;
+	}
+
+
+	/* nav */
+	button.navbar-toggler.navbar-toggler-right {
+	    text-align: center;
+	    margin-top: 0.55em;
+	    background-color: white;
+	}
+
+	div#navbarSupportedContent {
+	    width: 50% !important;
+	    margin-left: 50% !important;
+	}
+
+	.mc_signup {
+	    text-align: center;
+	}	
+
+	/* Tiles + Timeline */
+	.col-md-4 {
+	    min-width: 100%;
+	}
+	.row._tile.timeline {
+	    display: none;
+	}
+
+
+	.inner_grid._tile.w3 {
+	    margin: 2em;
+	    min-height: 35em;
+	}
+
+	/* Web 3 */
+	.grid1 i.fas {
+	    font-size: 7em !important;
+	    margin-right: 0.25em;
+	}
+
+	.row.services-top-grids {
+	    margin-bottom: 5em;
+	}
+
+	section.services {
+	    height: 100em !important;
+	}
+	.col-md-8.service_right_grid {
+    	min-width: 100%;
+	}
+
+	.heading-agileinfo span {
+    	font-size: 25px !important;
+	}
+	.services-top-grids {
+	    top: 30em !important;
+	}
+	.carousel-caption.nothome.Finance {
+    	top: 0em !important;
+	}
+
+	.carousel-item {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 22, 23, 0.6)), to(rgba(23, 22, 23, 0.6))), url(../images/main.jpg) no-repeat no-repeat !important;
+		background: linear-gradient(rgba(23, 22, 23, 0.6), rgba(23, 22, 23, 0.6)), url(../images/main.jpg) no-repeat no-repeat !important;
+		background-size: cover !important;
+	}
+	.ser_tp {
+		max-width: 100% !important;
+	}
+	.modal-dialog {
+    	max-width: 85% !important;
+	}
+	.col-md-4, .col-md-8, .col-md-3 {
+        min-width: 100%;
+    }
+
+    .timelineHeader {
+    	display: none;
+    }
+
+    .timelineBody {
+    	min-height: 100vh !important;
+    }
+
+
+}
+
+
+
