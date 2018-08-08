@@ -1,0 +1,29 @@
+extends /layouts/main
+
+block title
+    title
+      | Partners | Blockchain Institute
+
+block description
+  meta(name='description', content='Information about distributed ledger technology and how it will impact your life.')
+
+block content
+  - var nav = "events";
+  - var bannerMsg = "Partners";
+  - var bannerFocus = "";
+  - var bannerImage = "images/events-banner.png";
+  - var sectionImage = "images/web3_5.png";
+  - var home = 'nothome';
+
+  include /includes/header
+  include /includes/banner
+  include /includes/partners
+  //- include /includes/tiles
+
+
+
+
+
+
+
+
