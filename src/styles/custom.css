@@ -523,3 +523,12 @@ img.img-profile-pic {
     width: 60%;
 }
 
+section.partners {
+    background: radial-gradient(400em 1500em, #d9d9d9, transparent), url(/images/tile_grid.svg) repeat;
+}
+
+.partnerLogo {
+    width: 25%;
+    display: inline-block;
+    padding: 2em !important;
+}
