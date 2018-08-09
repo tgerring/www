@@ -2,6 +2,10 @@ section.about
   .container
     .row.ab-agile
       .col-md-6.aboutleft
+        img.img-responsive(src='/images/events.jpg', alt='')
+        br
+        .clear
+        br
         p.para1
           | Learning new technology isn't easy, but in-person events and hands on examples can make all the difference. The Blockchain Institute will be opening our flagship location in Chicago's Uptown neighborhood in Fall 2018, but until then we're proud to sponsor local events to promote decentralized technology.
         p
@@ -23,7 +27,64 @@ section.about
           a.externaLink(href='https://blockchain.wtf/' target="_blank") Blockchain.wtf!
 
       .col-md-6.aboutright
-        img.img-responsive(src='/images/events.jpg', alt='')
+        section.about.recentEvents
+          .container.events
+            h1 Recent Events
+            br            
+            a(href='#', data-toggle='modal', data-target='#internetOfValue' class="event")
+              .row.ab-agile
+                .col-md-4.aboutleft.event
+                  img.img-events-pic(src='#{image1}', alt='')        
+
+                .col-md-8.aboutright.event
+                  h2.events.name
+                    | #{name1}
+                  br
+                  h3.events.title
+                    | #{title1}
+                  p.events.description
+                    | #{description1}
+                  p.events.date
+                    | #{date1}    
+              br
+              .clear
+            a(href='#', data-toggle='modal', data-target='#internetOfValue' class="event")
+              .row.ab-agile
+                .col-md-4.aboutleft.event
+                  img.img-events-pic(src='#{image2}', alt='')        
+
+                .col-md-8.aboutright.event
+                  h2.events.name
+                    | #{name2}
+                  br
+                  h3.events.title
+                    | #{title2}
+                  p.events.description
+                    | #{description2}
+                  br
+                  p.events.date
+                    | #{date2}    
+              br
+              .clear
+            a(href='#', data-toggle='modal', data-target='#internetOfValue' class="event")
+              .row.ab-agile 
+                .col-md-4.aboutleft.event
+                  img.img-events-pic(src='#{image3}', alt='')        
+
+                .col-md-8.aboutright.event
+                  h2.events.name
+                    | #{name3}
+                  br
+                  h3.events.title
+                    | #{title3}
+                  p.events.description
+                    | #{description3}
+                  br
+                  p.events.date
+                    | #{date3}          
+            br
+            .clear
+          // //wthree-mid   
       br
     .clear
 

@@ -532,3 +532,9 @@ section.partners {
     display: inline-block;
     padding: 2em !important;
 }
+h3.events {
+    font-size: 1em;
+}
+img.img-events-pic {
+    max-width: 100%;
+}
