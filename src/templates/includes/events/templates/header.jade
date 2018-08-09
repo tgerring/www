@@ -9,25 +9,25 @@ header
           a#navbarDropdown.nav-link.mobi(href='#', role='button', data-toggle='dropdown', aria-haspopup='true')
             | Impact
             .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item.mobi(href='/web3') Web 3.0
+              a.dropdown-item.mobi(href='../web3') Web 3.0
               .dropdown-divider
-              a.dropdown-item.mobi(href='/industries/') Industries
+              a.dropdown-item.mobi(href='/') Industries
               .dropdown-divider
             hr 
         li.nav-item.dropdown(class="industries")
           a#navbarDropdown.nav-link.mobi(href='#', role='button', data-toggle='dropdown', aria-haspopup='true')
             | Services
             .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item.mobi(href='/events/') Events
+              a.dropdown-item.mobi(href='../events') Events
               .dropdown-divider
-              a.dropdown-item.mobi(href='/partners') Partners
-              .dropdown-divider                
+              a.dropdown-item.mobi(href='../programs') Programs
+              .dropdown-divider
             hr                        
         li.nav-item(class="industries")
-          a.nav-link.mobi(href='/about') About
+          a.nav-link.mobi(href='../about') About
         br
         li.nav-item(class="industries")
-          a.nav-link.mobi(href='/contact') Contact
+          a.nav-link.mobi(href='../contact') Contact
         br
         hr
         br
@@ -54,30 +54,26 @@ header
         .hedder-up
           div.nav_logo_container
             a.nav-link(href='/')
-              img.nav_logo(src="images/logo_color.jpg" alt="The Blockchain Institute")
+              img.nav_logo(src="/images/logo_color.jpg" alt="The Blockchain Institute")
         #navbarSupportedContent.collapse.navbar-collapse.justify-content-end
           ul.navbar-nav(class="#{nav}")
             li.nav-item.dropdown(class="offerings")
               a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Services
               .dropdown-menu(aria-labelledby='navbarDropdown')
-                a.dropdown-item(href='/events/') Events
+                a.dropdown-item(href='../programs') Programs
                 .dropdown-divider
-                a.dropdown-item(href='/partners') Partners  
+                a.dropdown-item(href='/') Events  
             li.nav-item.dropdown(class="industries")
               a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Impact
               .dropdown-menu(aria-labelledby='navbarDropdown')
-                a.dropdown-item(href='/web3') Web 3.0
+                a.dropdown-item(href='../web3') Web 3.0
                 .dropdown-divider
-                a.dropdown-item(href='/industries/') Industries   
-            li.nav-item.dropdown(class="industries")
-              a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                | About
-              .dropdown-menu(aria-labelledby='navbarDropdown')
-                a.dropdown-item(href='/about') Team
-                .dropdown-divider
-                a.dropdown-item(href='/contact') Contact              
+                a.dropdown-item(href='../industries') Industries         
+            li.nav-item(class="industries")
+              a.nav-link(href='../about')
+                | About 
           //- .w3_agile_login
           //-   .cd-main-header
           //-     a.cd-search-trigger(href='#cd-search')
