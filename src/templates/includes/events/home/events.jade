@@ -1,7 +1,7 @@
 section.about
   .container
     .row.ab-agile
-      .col-md-6.aboutleft
+      .col-md-8.aboutleft
         img.img-responsive(src='/images/events.jpg', alt='')
         br
         .clear
@@ -26,12 +26,12 @@ section.about
           | , and online resources like  
           a.externaLink(href='https://blockchain.wtf/' target="_blank") Blockchain.wtf!
 
-      .col-md-6.aboutright
+      .col-md-4.aboutright
         section.about.recentEvents
           .container.events
-            h1 Recent Events
+            h1 EVENTS
             br            
-            a(href='#', data-toggle='modal', data-target='#internetOfValue' class="event")
+            a(href='#', data-toggle='modal', data-target='#{link1}' class="event")
               .row.ab-agile
                 .col-md-4.aboutleft.event
                   img.img-events-pic(src='#{image1}', alt='')        
@@ -39,16 +39,11 @@ section.about
                 .col-md-8.aboutright.event
                   h2.events.name
                     | #{name1}
-                  br
-                  h3.events.title
-                    | #{title1}
-                  p.events.description
-                    | #{description1}
                   p.events.date
                     | #{date1}    
               br
               .clear
-            a(href='#', data-toggle='modal', data-target='#internetOfValue' class="event")
+            a(href='#', data-toggle='modal', data-target='#{link2}' class="event")
               .row.ab-agile
                 .col-md-4.aboutleft.event
                   img.img-events-pic(src='#{image2}', alt='')        
@@ -56,17 +51,11 @@ section.about
                 .col-md-8.aboutright.event
                   h2.events.name
                     | #{name2}
-                  br
-                  h3.events.title
-                    | #{title2}
-                  p.events.description
-                    | #{description2}
-                  br
                   p.events.date
                     | #{date2}    
               br
               .clear
-            a(href='#', data-toggle='modal', data-target='#internetOfValue' class="event")
+            a(href='#', data-toggle='modal', data-target='#{link3}' class="event")
               .row.ab-agile 
                 .col-md-4.aboutleft.event
                   img.img-events-pic(src='#{image3}', alt='')        
@@ -74,14 +63,34 @@ section.about
                 .col-md-8.aboutright.event
                   h2.events.name
                     | #{name3}
-                  br
-                  h3.events.title
-                    | #{title3}
-                  p.events.description
-                    | #{description3}
-                  br
                   p.events.date
-                    | #{date3}          
+                    | #{date3}    
+              br
+              .clear                    
+            a(href='#', data-toggle='modal', data-target='#{link4}' class="event")
+              .row.ab-agile 
+                .col-md-4.aboutleft.event
+                  img.img-events-pic(src='#{image4}', alt='')        
+
+                .col-md-8.aboutright.event
+                  h2.events.name
+                    | #{name4}
+                  p.events.date
+                    | #{date4}    
+              br
+              .clear                    
+            a(href='#', data-toggle='modal', data-target='#{link5}' class="event")
+              .row.ab-agile 
+                .col-md-4.aboutleft.event
+                  img.img-events-pic(src='#{image5}', alt='')        
+
+                .col-md-8.aboutright.event
+                  h2.events.name
+                    | #{name5}
+                  p.events.date
+                    | #{date5}     
+              br
+              .clear                                                                 
             br
             .clear
           // //wthree-mid   

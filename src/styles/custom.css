@@ -209,7 +209,7 @@ h4.modal-title {
     background-size: cover !important;
 }
 .serv-grid3 {
-    background: url(../images/BI_Automotive.jpg) no-repeat 0px 0px !important;
+    background: url(../images/DigitalIdentity_1.png) no-repeat 0px 0px !important;
     background-size: cover !important;
 }
 
@@ -536,5 +536,51 @@ h3.events {
     font-size: 1em;
 }
 img.img-events-pic {
-    max-width: 100%;
+    height: 100%;
+    border-radius: 0.25em;
+}
+section.about.recentEvents {
+    padding-top: 0;
+}
+.event .row.ab-agile {
+    height: 8em !important;
+    background-color: white;
+    border-radius: 0.25em;
+    box-shadow: #0000001f 0px 0px 1px 2px;
+}
+.container.events {
+    padding: 2em;
+    background-color: #80808066;
+    border-radius: 0.5em;
+    -webkit-box-shadow: #00000052 0px 0px 1px 2px;
+    box-shadow: #0000001f 0px 0px 1px 2px;
+    padding-bottom: 0;
+}
+
+.col-md-4.aboutleft.event {
+    padding: 0;
+    border-radius: 0.25em;
+}
+.col-md-8.aboutright.event {
+    background-color: white;
+    padding: 1em;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    /*box-shadow: #00000052 0px 0px 1px 2px;*/
+}
+h2.events.name {
+    font-size: 1.5em;
+}
+p.events.description {
+    display: none;
+}
+.events h1 {
+    font-size: 2em;
+}
+h3.events.title {
+    display: none;
+}
+img.img-responsive {
+    border-radius: 0.1em;
+    box-shadow: #0000001f 0px 0px 1px 2px;
 }
